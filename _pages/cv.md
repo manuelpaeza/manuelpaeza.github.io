@@ -11,26 +11,24 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Computer Science - Mathematics, Columbia University, 2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
+* November 2024 - Present: Visiting Scholar Fellow
+  * Flatiron Institute, Simons Foundation
   * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+  * Supervisor: Dmitrii Mitya Chklovskii
 
-* Fall 2015: Research Assistant
-  * Github University
+* May 2024 - August 2024: Summer Research Intern
+  * Flatiron Institute, Simons Foundation
   * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  * Supervisor: Dmitrii Mitya Chklovskii
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* September 2022 - August 2023: Research Intern
+  * Flatiron Institute, Simons Foundation
+  * Duties included: Merging pull requests
+  * Supervisor: Dmitrii Mitya Chklovskii
   
 Skills
 ======
@@ -40,6 +38,9 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
+* Hobbies 1
+* Hobbies 2
+* Hobbies 3
 
 Publications
 ======
@@ -61,4 +62,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* 
