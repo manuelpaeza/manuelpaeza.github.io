@@ -21,13 +21,13 @@ repository               : "manuelpaez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "manuelpaez_profile_pic.jpg"
+  avatar           : "manuelpaez_profilepic.jpg"
   name             : "Manuel Paez"
   # pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
   location         : "New York Metropolitan Area"
   # employer         : "Red Brick University"
-  uri              : # URL
+  # uri              : # URL
   email            : "manuel.paez@columbia.edu" 
 
   # Academic websites
