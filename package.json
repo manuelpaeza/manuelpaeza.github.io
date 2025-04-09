@@ -1,0 +1,23 @@
+{
+    "name": "Manuel Paez",
+    "version": "1.0.0",
+    "description": "My Personal Website",
+    "main": "index.js",
+    "scripts": {
+      "build-css": "tailwindcss build src/styles.css -o styles.css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/manuelpaeza/manuelpaeza.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/manuelpaeza/manuelpaeza.github.io/issues"
+    },
+    "homepage": "https://github.com/manuelpaeza/manuelpaeza.github.io#readme",
+    "dependencies": {
+      "tailwindcss": "^3.3.2"
+    }
+  }
