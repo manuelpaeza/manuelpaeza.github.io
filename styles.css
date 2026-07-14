@@ -709,6 +709,14 @@ video {
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
+.publication-entry {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
 .hover\:text-\[\#EE4B2B\]:hover {
   --tw-text-opacity: 1;
   color: rgb(238 75 43 / var(--tw-text-opacity));
