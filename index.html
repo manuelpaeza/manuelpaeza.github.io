@@ -19,6 +19,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Paez</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .site-shell {
+            width: min(92vw, 1120px);
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+        .site-title {
+            text-align: center;
+        }
+        .site-nav {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0 2rem;
+            margin-top: 1rem;
+        }
+        .site-nav a {
+            padding-left: 0 !important;
+        }
+        .home-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.85fr);
+            gap: 3rem;
+            align-items: start;
+        }
+        .profile-panel {
+            position: sticky;
+            top: 2rem;
+        }
+        .profile-photo {
+            width: min(100%, 280px);
+            border-radius: 0.5rem;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+        @media (max-width: 820px) {
+            .site-shell {
+                padding: 2.5rem 0;
+            }
+            .home-grid {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+            }
+            .profile-panel {
+                position: static;
+                order: -1;
+            }
+            .profile-photo {
+                width: min(70vw, 240px);
+            }
+        }
+    </style>
 
     <!-- LaTex stuff -->
     <script>
@@ -30,11 +81,11 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 
-<body class="flex justify-center text-[15px] font-[Open_Sans]">
-    <div class="w-11/12 md:w-3/4 max-w-6xl py-16">
+<body class="text-[15px] font-[Open_Sans]">
+    <div class="site-shell">
         <div>
             <header>
-                <div class="flex justify-center">
+                <div class="site-title">
                     <a class="font-light text-2xl hover:text-blue-700" href="./index.html">
                         Manuel Paez
                     </a>
@@ -44,7 +95,7 @@
                 <!--     manuel.paez [at] columbia.edu --> 
                 <!--  </div> --> 
      
-                <nav class="flex">
+                <nav class="site-nav flex">
                     <a href="cv.html" class="hover:text-blue-700 text-xl font-extralight"> CV </a>
 
                     <a href="coding-projects.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> Coding Projects </a>
@@ -56,34 +107,26 @@
             </header>
             
         </div>
-        <main class="font-[275] pt-4">
-
-            <div class="pt-4 pb-2">
-                <img class="w-1/4 sm:w-1/4 ml-10 float-right flex rounded-lg" src="manuelpaez_profilepic_november2025.jpg" height="auto"> 
-                
+        <main class="font-[275] pt-4 home-grid">
+            <section class="main-column">
+                <h2 class="mt-3 mb-1 text-xl font-normal">
+                    Introduction
+                </h2>
                 <p class="text-justify">
-                    Hello! I am a final-year M.S. student in computer science at Columbia University, where I am incredibly fortunate to be advised by 
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer"> Alexandr Andoni </a> and 
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://neural-circuits-and-algorithms.github.io/" target="_blank" rel="noopener noreferrer">Mitya Chklovskii</a>. 
-                    My research interests lie at the intersection of theoretical computer science, high-dimensional probability, machine learning, and statistics. 
-                    I am especially fascinated interested in algorithms for sampling from complex high-dimensional distributions and algorithmic barriers in random complex systems. 
-                    Previously, I graduated with my B.A. from <a class="text-blue-700 hover:text-[#EE4B2B]" href="/">Columbia University</a>, where I studied computer science and mathematics. 
+                    Welcome to my website. This page collects my research, teaching, academic projects, and related work.
                 </p>
 
-                <div class="mt-3">
-                    <div>
-                        <span style="font-weight: 400;">Email:</span> manuel.paez [at] columbia.edu
-                    </div>
-                    <div>
-                        <span style="font-weight: 400;">Links:</span>
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_curriculum_vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_resume_mlre.pdf" target="_blank" rel="noopener noreferrer">Resume</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza" target="_blank" rel="noopener noreferrer">Github</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.linkedin.com/in/manuelpaeza/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                    </div>
-                </div>
-
-            </div> 
+                <h2 class="mt-3 mb-1 text-xl font-normal">
+                    Research Papers
+                </h2>
+                <ol class="ml-4 list-decimal list-inside">
+                    <li>
+                        Task-Response and Curvature Spectral Geometry of High-Dimensional Optimization. Manuel Paez. In submission.
+                    </li>
+                    <li>
+                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://openreview.net/forum?id=ufLJLAUCO6" target="_blank" rel="noopener noreferrer">Rank-One Spectral Normalization Accelerates Projected Feature Learning</a> (with Chryseis Xinyi Liu). In HiLD at ICML 2026 Poster.
+                    </li>
+                </ol>
 
 
             <!--- <h2 class="mt-3 text-xl font-light"> 
@@ -161,8 +204,33 @@ the Method of Moments [</a> <a class="text-blue-700 hover:text-[#EE4B2B]" href="
                     In my free time I enjoy <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://substack.com/@manuelpaez" target="_blank" rel="noopener noreferrer">writing</a>, reading novels as well as Bloomberg, Financial Times, and the Economist, engaging with the Arts (Ballet, Opera, Philharmonics, Art Galleries), visiting coffee shops, cooking, 
                     and squash, fencing, soccer, running, and tennis.
                 </p> 
-            </div> 
-        
+            </div>
+            </section>
+
+            <aside class="profile-panel">
+                <img class="profile-photo" src="manuelpaez_profilepic_november2025.jpg" alt="Manuel Paez" height="auto"> 
+                <p class="text-justify">
+                    Hello! I am a final-year M.S. student in computer science at Columbia University, where I am incredibly fortunate to be advised by 
+                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a> and 
+                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://neural-circuits-and-algorithms.github.io/" target="_blank" rel="noopener noreferrer">Mitya Chklovskii</a>. 
+                    My research interests lie at the intersection of theoretical computer science, high-dimensional probability, machine learning, and statistics. 
+                    I am especially fascinated by algorithms for sampling from complex high-dimensional distributions and algorithmic barriers in random complex systems. 
+                    Previously, I graduated with my B.A. from <a class="text-blue-700 hover:text-[#EE4B2B]" href="/">Columbia University</a>, where I studied computer science and mathematics. 
+                </p>
+
+                <div class="mt-3">
+                    <div>
+                        <span style="font-weight: 400;">Email:</span> manuel.paez [at] columbia.edu
+                    </div>
+                    <div>
+                        <span style="font-weight: 400;">Links:</span>
+                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_curriculum_vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a> |
+                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_resume_mlre.pdf" target="_blank" rel="noopener noreferrer">Resume</a> |
+                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza" target="_blank" rel="noopener noreferrer">Github</a> |
+                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.linkedin.com/in/manuelpaeza/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    </div>
+                </div>
+            </aside>
         </main>
     </div>
 
