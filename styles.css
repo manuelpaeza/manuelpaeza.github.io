@@ -760,5 +760,13 @@ video {
 
 /* Site body copy size. Section headers use explicit text-xl classes. */
 body {
-  font-size: 10pt;
+  font-size: 11pt;
+}
+
+.research-paper-list > div + div {
+  margin-top: 1.25rem;
+}
+
+.research-paper-list > div {
+  line-height: 1.55;
 }
