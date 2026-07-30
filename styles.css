@@ -763,10 +763,11 @@ body {
   font-size: 11pt;
 }
 
-.research-paper-list > div + div {
-  margin-top: 1.25rem;
+.research-paper-entry {
+  margin-bottom: 1.55em;
+  line-height: 1.55;
 }
 
-.research-paper-list > div {
-  line-height: 1.55;
+.research-paper-entry:last-child {
+  margin-bottom: 0;
 }
