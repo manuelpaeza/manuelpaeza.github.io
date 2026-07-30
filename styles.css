@@ -757,3 +757,8 @@ video {
     width: 75%;
   }
 }
+
+/* Site body copy size. Section headers use explicit text-xl classes. */
+body {
+  font-size: 10pt;
+}
