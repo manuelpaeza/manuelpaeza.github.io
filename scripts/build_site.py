@@ -59,14 +59,14 @@ def page(filename, title, description, body, home=False, redirect=None):
 <meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="styles.css?v=20261109-compact">
+<link rel="stylesheet" href="styles.css?v=20261109-spacing-v2">
 {refresh}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="site-shell">
 <header class="site-header"><h1><a href="index.html">Manuel Paez</a></h1><nav aria-label="Main navigation">{nav}</nav></header>
-<main id="main" class="{'home-grid' if home else 'page-content'}">
+<main id="main" class="{'home-grid' if home else ('page-content projects-page' if filename == 'projects.html' else 'page-content')}">
 {body}
 </main>
 </div>
@@ -91,8 +91,8 @@ def main():
     page('publications.html','Publications — Manuel Paez','Research papers, workshop publications, and manuscripts in preparation by Manuel Paez.',pubs)
     page('projects.html','Course Projects and Lecture Notes — Manuel Paez','Course reports and scribed lecture notes in algorithms, probability, and machine learning.','<section><h2>Course Projects</h2>'+listing(projects,project)+'</section><section><h2>Lecture Notes</h2>'+listing(notes,project)+'</section>')
     code_entries=[
-     ('CaImAn — Calcium and Voltage Imaging Analysis','Migrated deep-learning training, inference, and pretrained weights from TensorFlow to PyTorch. Reintegrated scalable calcium- and voltage-imaging analysis workflows and evaluated models using HPC infrastructure.', [('Code','https://github.com/flatironinstitute/CaImAn'),('Documentation','https://caiman.readthedocs.io/en/latest/'),('Release','https://github.com/flatironinstitute/CaImAn/releases/tag/v1.13.0'),('Fork','https://github.com/manuelpaeza/CaImAn')]),
-     ('NeuTorch — Neuron Boundary Segmentation','Extended NeuTorch with a supervised IsoRSUNet architecture for electron-microscopy connectome segmentation. Evaluated the model on 2.1 billion annotated voxels from three wasp specimens, reducing Rand-based split error by up to 52% relative to baseline.', [('Code','https://github.com/image-infomatics/neutorch'),('Fork','https://github.com/manuelpaeza/neutorch')]),
+     ('CaImAn: Calcium and Voltage Imaging Analysis','Migrated deep-learning training, inference, and pretrained weights from TensorFlow to PyTorch. Reintegrated scalable calcium- and voltage-imaging analysis workflows and evaluated models using HPC infrastructure.', [('Code','https://github.com/flatironinstitute/CaImAn'),('Documentation','https://caiman.readthedocs.io/en/latest/'),('Release','https://github.com/flatironinstitute/CaImAn/releases/tag/v1.13.0'),('Fork','https://github.com/manuelpaeza/CaImAn')]),
+     ('NeuTorch: Neuron Boundary Segmentation','Extended NeuTorch with a supervised IsoRSUNet architecture for electron-microscopy connectome segmentation. Evaluated the model on 2.1 billion annotated voxels from three wasp specimens, reducing Rand-based split error by up to 52% relative to baseline.', [('Code','https://github.com/image-infomatics/neutorch'),('Fork','https://github.com/manuelpaeza/neutorch')]),
      ('Medical Masked Autoencoder Knowledge Distillation','Implemented PyTorch knowledge-distillation pipelines to compress masked autoencoders into tiny architectures for medical image analysis. Joint course work included training, fine-tuning, and evaluation workflows.', [('Code','https://github.com/manuelpaeza/AdvTopicsDL-Project'),('Report','projects/COMS6998_AdvancedTopicDL_projectreport_paezdassumlibrandi.pdf')]),
      ('Assembly Calculus / Assemblies','Simulated project, associate, and merge operations on neuronal populations with Hebbian plasticity and inhibition. The experiments follow Papadimitriou et al.’s “Brain computation by assemblies of neurons” (PNAS, 2020).', [('Code','https://github.com/manuelpaeza/assemblies'),('Original paper','https://www.pnas.org/content/117/25/15603')]),
      ('Quantum Pattern Detection in Gravitational-Wave Data','Developed Python/Qiskit circuits using amplitude encoding and quantum-based signal-to-noise ratio estimators. Evaluated quantum and classical estimators on gravitational-wave data.', [('Code','https://github.com/manuelpaeza/quantum_pattern_algorithm')])
