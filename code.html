@@ -1,99 +1,25 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code - Manuel Paez</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code — Manuel Paez</title>
+<meta name="description" content="Research software and computational projects by Manuel Paez.">
+<link rel="canonical" href="https://manuelpaeza.github.io/code.html">
+<meta property="og:title" content="Code — Manuel Paez">
+<meta property="og:description" content="Research software and computational projects by Manuel Paez.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://manuelpaeza.github.io/code.html">
+<link rel="stylesheet" href="styles.css?v=20261109-overhaul">
+
 </head>
-<body class="flex justify-center text-[12px] font-[Open_Sans]">
-    <div class="w-11/12 md:w-3/4 max-w-6xl py-16">
-        <div>
-            <header class="flex justify-between">
-                <h1 class="font-light text-2xl font-sans hover:text-blue-700">
-                    <a href="./index.html"> Manuel Paez </a>
-                </h1>
-
-                <nav class="flex">
-                    <a href="index.html" class="hover:text-blue-700 text-xl font-extralight"> Home </a>
-                    <a href="publications.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> Publications </a>
-                    <a href="code.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> Code </a>
-                    <a href="cv.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> CV </a>
-                </nav>
-            </header>
-
-        </div>
-
-        <main class="font-[275] pt-4">
-
-            <h2 class="mt-3 text-xl font-light">
-                Code 
-            </h2>
-
-            <!-- CaImAn -->
-            <div style="margin-top: 1.25rem; margin-bottom: 1.25rem;">
-                <div style="font-size: 1.1rem; font-weight: 400;">
-                    <a style="color: #1e3a5f;" onmouseover="this.style.color='#EE4B2B'" onmouseout="this.style.color='#1e3a5f'" href="https://github.com/flatironinstitute/CaImAn" target="_blank" rel="noopener noreferrer">Caiman Open Source Tool for Scalable Calcium Imaging Data Analysis</a>
-                </div>
-                <p>
-                    Contributed to a major release of the Flatiron Institute's Caiman open-source software package, a python tookit for large-scale Calcium and Voltage imaging data nalaysis.
-                    The major release included a significant rewrite of the software's deep learning-based motion correction, source extraction, and Volpy modules, which were from originally written in Tensorflow and were replaced with Pytorch/Keras impelemntations.
-                    Significant changes to training and validation pipelines for Volpy's MCRNN and Ring CNN module were also included, and several CNN models were replaced with more efficient and accurate architectures. Still continuing to contribute to the project,
-                    including the further improvment of Masked Ring CNNs for the Volpy module.
-                </p>
-                <p>
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://caiman.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Documentation</a> &nbsp;&nbsp;
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/flatironinstitute/CaImAn/releases/tag/v1.13.0" target="_blank" rel="noopener noreferrer">Release Version</a> &nbsp;&nbsp;
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza/CaImAn" target="_blank" rel="noopener noreferrer">Forked Version (My Github)</a>
-                </p>
-            </div>
-
-            <!-- Neutorch -->
-            <div style="margin-bottom: 1.25rem;">
-                <div style="font-size: 1.1rem; font-weight: 400;">
-                    <a style="color: #1e3a5f;" onmouseover="this.style.color='#EE4B2B'" onmouseout="this.style.color='#1e3a5f'" href="https://github.com/image-infomatics/neutorch" target="_blank" rel="noopener noreferrer">Neutorch Neuron Segmentation and Synapse Detection using Pytorch</a>
-                </div>
-                <p>
-                    Contributed/ing to the development of Neutorch, a python-based Convolutional Neural Network training and inferene kit for Neuron segmentation and synapse detection using Pytorch.
-                    Neutorch is a package used for the Flatiron Institute's large-scale Wasp connectomes project, which is a project designed to reconstruct the Megaphragma Viggiani neural system.
-                    Currently working on Neuron boundary detection and fixing membrane leaking in Volume Electron Microscopy Images using Neutorch's IsoRSUnet training and validation pipeline.
-                </p>
-                <p>
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza/neutorch" target="_blank" rel="noopener noreferrer">Forked Version (My Github)</a>
-                </p>
-            </div>
-
-            <!-- Medical Masked-Autoencoder (MAE) Distilled -->
-            <div style="margin-bottom: 1.25rem;">
-                <div style="font-size: 1.1rem; font-weight: 400;">
-                    <a style="color: #1e3a5f;" onmouseover="this.style.color='#EE4B2B'" onmouseout="this.style.color='#1e3a5f'" href="https://github.com/manuelpaeza/AdvTopicsDL-Project" target="_blank" rel="noopener noreferrer"> Medical Masked-Autoencoder (MAE) Distilled</a>
-                </div>
-                <p>
-                    Implementation of knowledge distillation pipelines to compress Masked Autoencoder (MAE) models from base/small to tiny architectures for medical image analysis. Includes distillation training scripts, medical image fine-tuning,
-                    and evaluation workflows built in PyTorch. Joint work for CS 6998: Advanced Topics in Deep Learning.
-                </p>
-                <p>
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="/projects/COMS6998_AdvancedTopicDL_projectreport_paezdassumlibrandi.pdf" target="_blank" rel="noopener noreferrer">Paper </a> &nbsp;&nbsp;
-                </p>
-            </div>
-
-            <!-- Neuronal Ensembles -->
-            <div style="margin-bottom: 1.25rem;">
-                <div style="font-size: 1.1rem; font-weight: 400;">
-                    <a style="color: #1e3a5f;" onmouseover="this.style.color='#EE4B2B'" onmouseout="this.style.color='#1e3a5f'" href="" target="_blank" rel="noopener noreferrer"> Assemblies Ensemble Project</a>
-                </div>
-                <p>
-                    Simulation of assembly operations as proposed in Papadimitriou et al.'s "Brain computation by assemblies of neurons" (PNAS, 2020). Implements core operations
-                    of the Assembly Calculus — project, associate, and merge — on randomly connected populations of neurons with Hebbian plasticity and inhibition. Includes
-                    systematic experiments testing assembly behavior across varying configurations of neural firing patterns and parameters.
-                </p>
-                <p>
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.pnas.org/content/117/25/15603" target="_blank" rel="noopener noreferrer">Original Paper</a> &nbsp;&nbsp;
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza/neutorch" target="_blank" rel="noopener noreferrer">Forked Version (My Github)</a>
-                </p>
-            </div>
-    </div>
-
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+<header class="site-header"><h1><a href="index.html">Manuel Paez</a></h1><nav aria-label="Main navigation"><a href="index.html">Home</a> <a href="publications.html">Publications</a> <a href="projects.html">Projects</a> <a href="code.html" aria-current="page">Code</a> <a href="manuelpaez_curriculum_vitae.pdf">CV</a></nav></header>
+<main id="main" class="page-content">
+<section><h2>Code</h2><article class="code-entry"><h3>CaImAn — Calcium and Voltage Imaging Analysis</h3><p>Migrated deep-learning training, inference, and pretrained weights from TensorFlow to PyTorch. Reintegrated scalable calcium- and voltage-imaging analysis workflows and evaluated models using HPC infrastructure.</p><p class="entry-links"><a href="https://github.com/flatironinstitute/CaImAn" target="_blank" rel="noopener noreferrer">[Code]</a> <a href="https://caiman.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">[Documentation]</a> <a href="https://github.com/flatironinstitute/CaImAn/releases/tag/v1.13.0" target="_blank" rel="noopener noreferrer">[Release]</a> <a href="https://github.com/manuelpaeza/CaImAn" target="_blank" rel="noopener noreferrer">[Fork]</a></p></article><article class="code-entry"><h3>NeuTorch — Neuron Boundary Segmentation</h3><p>Extended NeuTorch with a supervised IsoRSUNet architecture for electron-microscopy connectome segmentation. Evaluated the model on 2.1 billion annotated voxels from three wasp specimens, reducing Rand-based split error by up to 52% relative to baseline.</p><p class="entry-links"><a href="https://github.com/image-infomatics/neutorch" target="_blank" rel="noopener noreferrer">[Code]</a> <a href="https://github.com/manuelpaeza/neutorch" target="_blank" rel="noopener noreferrer">[Fork]</a></p></article><article class="code-entry"><h3>Medical Masked Autoencoder Knowledge Distillation</h3><p>Implemented PyTorch knowledge-distillation pipelines to compress masked autoencoders into tiny architectures for medical image analysis. Joint course work included training, fine-tuning, and evaluation workflows.</p><p class="entry-links"><a href="https://github.com/manuelpaeza/AdvTopicsDL-Project" target="_blank" rel="noopener noreferrer">[Code]</a> <a href="projects/COMS6998_AdvancedTopicDL_projectreport_paezdassumlibrandi.pdf" target="_blank" rel="noopener noreferrer">[Report]</a></p></article><article class="code-entry"><h3>Assembly Calculus / Assemblies</h3><p>Simulated project, associate, and merge operations on neuronal populations with Hebbian plasticity and inhibition. The experiments follow Papadimitriou et al.’s “Brain computation by assemblies of neurons” (PNAS, 2020).</p><p class="entry-links"><a href="https://github.com/manuelpaeza/assemblies" target="_blank" rel="noopener noreferrer">[Code]</a> <a href="https://www.pnas.org/content/117/25/15603" target="_blank" rel="noopener noreferrer">[Original paper]</a></p></article><article class="code-entry"><h3>Quantum Pattern Detection in Gravitational-Wave Data</h3><p>Developed Python/Qiskit circuits using amplitude encoding and quantum-based signal-to-noise ratio estimators. Evaluated quantum and classical estimators on gravitational-wave data.</p><p class="entry-links"><a href="https://github.com/manuelpaeza/quantum_pattern_algorithm" target="_blank" rel="noopener noreferrer">[Code]</a></p></article></section>
+</main>
+</div>
 </body>
-
 </html>

@@ -1,274 +1,32 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- Google Verification -->
-    <!-- meta name="google-site-verification" content="U5NdmrUDiddQ1weUGfDhVg_hPZarTNjFCE7xTYXYmlE" -->
-    <!-- Google tag (gtag.js) -->
-    <!-- script async src="https://www.googletagmanager.com/gtag/js?id=G-2D6WT2PL7X"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manuel Paez — Computer Science Research</title>
+<meta name="description" content="Manuel Paez: theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning.">
+<link rel="canonical" href="https://manuelpaeza.github.io/index.html">
+<meta property="og:title" content="Manuel Paez — Computer Science Research">
+<meta property="og:description" content="Manuel Paez: theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://manuelpaeza.github.io/index.html">
+<link rel="stylesheet" href="styles.css?v=20261109-overhaul">
 
-    gtag('config', 'G-2D6WT2PL7X');
-    </script> -->
-
-    <!-- npm run build-css -->
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel Paez</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .site-shell {
-            width: min(92vw, 1120px);
-            margin: 0 auto;
-            padding: 4rem 0;
-        }
-        .site-title {
-            text-align: center;
-        }
-        .site-nav {
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0 2rem;
-            margin-top: 1rem;
-        }
-        .site-nav a {
-            padding-left: 0 !important;
-        }
-        .home-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.85fr);
-            gap: 3rem;
-            align-items: start;
-        }
-        .profile-panel {
-            position: sticky;
-            top: 2rem;
-            text-align: center;
-        }
-        .profile-photo {
-            width: min(100%, 280px);
-            border-radius: 0.5rem;
-            margin: 0 auto 1rem;
-            display: block;
-        }
-        @media (max-width: 820px) {
-            .site-shell {
-                padding: 2.5rem 0;
-            }
-            .home-grid {
-                grid-template-columns: 1fr;
-                gap: 1.75rem;
-            }
-            .profile-panel {
-                position: static;
-                order: -1;
-            }
-            .profile-photo {
-                width: min(70vw, 240px);
-            }
-        }
-    </style>
-
-    <!-- LaTex stuff -->
-    <script>
-        MathJax = {
-            tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
-            svg: {fontCache: 'global'}
-        };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
-
-<body class="text-[12px] font-[Open_Sans]">
-    <div class="site-shell">
-        <div>
-            <header>
-                <div class="site-title">
-                    <a class="font-light text-2xl hover:text-blue-700" href="./index.html">
-                        Manuel Paez
-                    </a>
-                </div>
-
-                <!--  <div class="flex justify-center font-extralight"> --> 
-                <!--     manuel.paez [at] columbia.edu --> 
-                <!--  </div> --> 
-     
-                <nav class="site-nav flex">
-                    <a href="index.html" class="hover:text-blue-700 text-xl font-extralight"> Home </a>
-
-                    <a href="publications.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> Publications </a>
-
-                    <a href="code.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> Code </a>
-
-                    <a href="cv.html" class="hover:text-blue-700 text-xl font-extralight pl-8"> CV </a>
-                </nav>
-            </header>
-            
-        </div>
-        <main class="font-[275] pt-4 home-grid">
-            <section class="main-column">
-                <h2 class="mt-3 mb-1 text-xl font-normal">
-                    Introduction
-                </h2>
-                <p class="text-left">
-                    Hello! I am a final-year M.S. student in Computer Science at Columbia University, where I am advised by
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a> and
-                    <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://neural-circuits-and-algorithms.github.io/" target="_blank" rel="noopener noreferrer">Dmitri “Mitya” Chklovskii</a>.
-                    I previously earned B.A. degrees in Computer Science and Mathematics from <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>.
-                </p>
-                <p class="text-left mt-3">
-                    My research interests lie at the intersection of theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning. I am particularly interested in high-dimensional randomized optimization, Markov chain mixing, and algorithms for sampling and inference in complex probabilistic models. More broadly, I seek to understand how the geometric and probabilistic structure of high-dimensional systems shapes computational complexity and the limits of efficient algorithms.
-                </p>
-
-                <h2 class="mt-3 mb-1 text-xl font-normal">
-                    Research Papers
-                </h2>
-                <div class="research-paper-list">
-                    <div class="research-paper-entry">
-                        <div class="font-normal">
-                            Low-Dimensional Embeddings of Ising Disagreement Metrics via Functional Inequalities
-                        </div>
-                        <div>
-                            <strong>Manuel Paez</strong>, Alexandr Andoni
-                        </div>
-                        <div>
-                            Manuscript in preparation, 2026.
-                        </div>
-                    </div>
-
-                    <div class="research-paper-entry">
-                        <div class="font-normal">
-                            Asymmetric Similarity Matching: A Normative Framework for Predictive Neural Computation
-                        </div>
-                        <div>
-                            Xuehao Ding, Marco Zenari, <strong>Manuel Paez</strong>, Dmitri B. Chklovskii
-                        </div>
-                        <div>
-                            Submitted to <em>Neural Computation</em>, 2026.
-                        </div>
-                    </div>
-
-                    <div class="research-paper-entry">
-                        <div class="font-normal">
-                            <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://arxiv.org/abs/2609.26934" target="_blank" rel="noopener noreferrer">Fast Geometric Spanners via Approximate Nearest Neighbor Search</a>
-                        </div>
-                        <div>
-                            Alexandr Andoni, <strong>Manuel Paez</strong>, Krish Singal, Tian Zhang
-                        </div>
-                        <div>
-                            <em>Innovations in Theoretical Computer Science (ITCS)</em>, 2027. Accepted.
-                        </div>
-                    </div>
-
-                    <div class="research-paper-entry">
-                        <div class="font-normal">
-                            <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://openreview.net/forum?id=ufLJLAUCO6" target="_blank" rel="noopener noreferrer">Rank-One Spectral Normalization Accelerates Projected Feature Learning</a>
-                        </div>
-                        <div>
-                            Chryseis Xinyi Liu, <strong>Manuel Paez</strong>
-                        </div>
-                        <div>
-                            ICML 2026 Workshop on High Dimensional Learning Dynamics (HiLD). [<a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/Chryseisliu/muon_accelerates_feature_learning" target="_blank" rel="noopener noreferrer">Code</a>]
-                        </div>
-                    </div>
-                </div>
-
-
-            <!--- <h2 class="mt-3 text-xl font-light"> 
-                Research
-            </h2>
-
-            <ul class="mt-3 mb-5"> 
-                <li class="font-normal">
-                    [Currently in the Works]
-                </li>
-
-            </ul>
-            -->
-
-            <h2 class="mt-3 mb-1 text-xl font-normal">
-                Teaching
-            </h2>
-            <ul class="ml-4 list-disc list-inside">
-                <li> 
-                    CS 6998 Algorithms for Massive Data <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~andoni/algoF25/index.html" target="_blank" rel="noopener noreferrer"> [Fall 2025] </a>
-                </li>
-                <li>
-                    CS 4995 Randomized Algorithms [Fall 2024] 
-                </li>
-            </ul>
-            
-            <h2 class="mt-3 mb-1 text-xl font-normal">
-                Course Projects
-            </h2>
-            <div>
-            </div>
-            <ul class="ml-4 list-disc list-inside">
-
-                <li>
-                    Project for <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~djhsu/coms6998-s25/" target="_blank" rel="noopener noreferrer">CS 6998: Theoretical Foundations of LLMs</a>: Provably Learning the Softmax Kernel of an Attention Head via the Method of Moments [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMS6998_TheoreticalFoundationsLLMs_manuelpaez_finalproject.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-
-                <li>
-                    Scribed lectures notes for <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~djhsu/coms6998-s25/" target="_blank" rel="noopener noreferrer">CS 6998: Theoretical Foundations of LLMs: </a> Inductive Biases and Variable Creation in Self-Attention Mechanisms [Edelman 2022] [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMS6998_TheoreticalFoundationsLLMs_Edelmanscribe_paezdevaul.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-
-                <li>
-                    Privacy and Uncovering User Information from Obfuscated K-means Clustering [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMSW4774_ClusterPackage_ColemanEyrePaez.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-
-                <li>
-                    Project for <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.advtopicsindeeplearning.com/" target="_blank" rel="noopener noreferrer"> CS 6998: Advanced Topics in Deep Learning: [</aKnowledge Distillation for Efficient Tiny Masked Autoencoders for Medical Imaging<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMS6998_AdvancedTopicDL_projectreport_paezdassumlibrandi.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-
-                <li>
-                    Survey and Extensions for Sketching Algorithms for Earth-Mover Distance and Chamfer Distance [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMSE9886_Algorithms_for_Massive_Data_PaezGuoMckelvie.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-
-                <li>
-                    Scribed lectures notes for <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.cs.columbia.edu/~andoni/algoF23/index.html" target="_blank" rel="noopener noreferrer">CS 6998: Algorithms for Massive Data: </a> Streaming for Graphs: Distance, Triangle Counting [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMSE6998_Algorithms_for_Massive_Data_Scribe_Lecture_2_manuelpaez.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                    </a>, and Sparse Fourier Transform [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMSE6998_Algorithms_for_Massive_Data_Lecture_12_manuelpaez.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li> 
-
-                <li>
-                    Survey of Spectral Sparsification and Sparsifer Algorithms [<a class="text-blue-700 hover:text-[#EE4B2B]" href="projects/COMS4232_Advanced_Algorithms_finalproject_paezcunninghamnatan.pdf" target="_blank" rel="noopener noreferrer">pdf</a>]
-                </li>
-            </ul>
-
-            <h2 class="mt-3 mb-1 text-xl font-normal"> 
-                Other
-            </h2> 
-            <div class="pb-12">
-                <p class="text-justify"> 
-                    In the past, I participated in the <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.simonsfoundation.org/funding-opportunities/shenoy-undergraduate-research-fellowship-in-neuroscience/" target="_blank" rel="noopener noreferrer"> SURFiN </a> and research interned as a machine learning researcher at <a class="text-blue-700 hover:text-[#EE4B2B]" href="/">Flatiron Institute</a>. 
-                    In my free time I enjoy <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://substack.com/@manuelpaez" target="_blank" rel="noopener noreferrer">writing</a>, reading novels as well as Bloomberg, Financial Times, and the Economist, engaging with the Arts (Ballet, Opera, Philharmonics, Art Galleries), visiting coffee shops, cooking, 
-                    and squash, fencing, soccer, running, and tennis.
-                </p> 
-            </div>
-            </section>
-
-            <aside class="profile-panel">
-                <img class="profile-photo" src="manuelpaez_profilepic_november2025.jpg" alt="Manuel Paez" height="auto"> 
-                <div class="mt-3 contact-block">
-                    <div>
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_curriculum_vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="manuelpaez_resume_mlre.pdf" target="_blank" rel="noopener noreferrer">Résumé</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://scholar.google.com/citations?user=C5Fel-sAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://github.com/manuelpaeza" target="_blank" rel="noopener noreferrer">Github</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://www.linkedin.com/in/manuelpaeza/" target="_blank" rel="noopener noreferrer">Linkedin</a> |
-                        <a class="text-blue-700 hover:text-[#EE4B2B]" href="https://x.com/manuel_paeza" target="_blank" rel="noopener noreferrer">X</a>
-                    </div>
-                    <div>
-                        <span style="font-weight: 400;">Contact:</span> manuel.paez [at] columbia.edu
-                    </div>
-                </div>
-            </aside>
-        </main>
-    </div>
-
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="site-shell">
+<header class="site-header"><h1><a href="index.html">Manuel Paez</a></h1><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a> <a href="publications.html">Publications</a> <a href="projects.html">Projects</a> <a href="code.html">Code</a> <a href="manuelpaez_curriculum_vitae.pdf">CV</a></nav></header>
+<main id="main" class="home-grid">
+<div class="main-column"><section aria-labelledby="introduction"><h2 id="introduction">Introduction</h2>
+    <p>Hello! I am a final-year M.S. student in Computer Science at Columbia University, where I am advised by <a href="https://www.cs.columbia.edu/~andoni/" target="_blank" rel="noopener noreferrer">Alexandr Andoni</a> and <a href="https://neural-circuits-and-algorithms.github.io/" target="_blank" rel="noopener noreferrer">Dmitri “Mitya” Chklovskii</a>. I previously earned B.A. degrees in Computer Science and Mathematics from <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>.</p>
+    <p>My research interests lie at the intersection of theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning. I am particularly interested in high-dimensional randomized optimization, Markov chain mixing, and algorithms for sampling and inference in complex probabilistic models. More broadly, I seek to understand how the geometric and probabilistic structure of high-dimensional systems shapes computational complexity and the limits of efficient algorithms.</p></section><section><h2>Selected Publications</h2><ul class="bibliography"><li class="entry"><h3>Fast Geometric Spanners via Approximate Nearest Neighbor Search</h3><p class="authors">Alexandr Andoni, <strong>Manuel Paez</strong>, Krish Singal, Tian Zhang</p><p class="metadata">Innovations in Theoretical Computer Science (ITCS), 2027. Accepted.</p><p class="entry-links"><a href="https://arxiv.org/abs/2609.26934" target="_blank" rel="noopener noreferrer">[arXiv]</a></p></li>
+<li class="entry"><h3>Asymmetric Similarity Matching: A Normative Framework for Predictive Neural Computation</h3><p class="authors">Xuehao Ding, Marco Zenari, <strong>Manuel Paez</strong>, Dmitri B. Chklovskii</p><p class="metadata">Submitted to Neural Computation, 2026.</p><p class="entry-links"></p></li>
+<li class="entry"><h3>Rank-One Spectral Normalization Accelerates Projected Feature Learning</h3><p class="authors">Chryseis Xinyi Liu, <strong>Manuel Paez</strong></p><p class="metadata">ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD), 2026.</p><p class="entry-links"><a href="https://openreview.net/forum?id=ufLJLAUCO6" target="_blank" rel="noopener noreferrer">[Paper]</a></p></li>
+<li class="entry"><h3>Low-Dimensional Embeddings of Ising Disagreement Metrics via Functional Inequalities</h3><p class="authors"><strong>Manuel Paez</strong>, Alexandr Andoni</p><p class="metadata">Manuscript in preparation, 2026.</p><p class="entry-links"></p></li></ul><p><a href="publications.html">All publications →</a></p></section><section><h2>Teaching</h2><ul class="teaching"><li>Course Assistant, CS 6998: Algorithms for Massive Data · <a href="https://www.cs.columbia.edu/~andoni/algoF25/index.html" target="_blank" rel="noopener noreferrer">Fall 2025</a></li><li>Course Assistant, CS 4995: Randomized Algorithms · Fall 2024</li></ul></section><section><h2>Selected Course Projects</h2><ul class="bibliography"><li class="entry"><h3>Upper Bound Energy Barriers for Simulated Annealing in Spherical Spin Glasses</h3><p class="metadata">Manuel Paez · IEOR 8100: Log-Concave Probability · Spring 2026 · Course report</p><p class="entry-links"><a href="projects/IEOR8100_Upper_Bound_Energy_Barriers_Spherical_Spin_Glasses_Paez_2026.pdf" target="_blank" rel="noopener noreferrer">[Report]</a></p></li>
+<li class="entry"><h3>Provably Learning the Softmax Kernel of an Attention Head via the Method of Moments</h3><p class="metadata">CS 6998: Theoretical Foundations of LLMs · Course report</p><p class="entry-links"><a href="projects/COMS6998_TheoreticalFoundationsLLMs_manuelpaez_finalproject.pdf" target="_blank" rel="noopener noreferrer">[Report]</a> <a href="https://www.cs.columbia.edu/~djhsu/coms6998-s25/" target="_blank" rel="noopener noreferrer">[Course]</a></p></li>
+<li class="entry"><h3>Survey and Extensions for Sketching Algorithms for Earth-Mover Distance and Chamfer Distance</h3><p class="metadata">Algorithms for Massive Data · Course report</p><p class="entry-links"><a href="projects/COMSE9886_Algorithms_for_Massive_Data_PaezGuoMckelvie.pdf" target="_blank" rel="noopener noreferrer">[Report]</a> <a href="https://www.cs.columbia.edu/~andoni/algoF23/index.html" target="_blank" rel="noopener noreferrer">[Course]</a></p></li></ul><p><a href="projects.html">All projects and lecture notes →</a></p></section><section><h2>Personal Interests</h2><p>Outside research, I enjoy <a href="https://substack.com/@manuelpaez" target="_blank" rel="noopener noreferrer">writing</a>, reading, the arts, visiting coffee shops, cooking, and sports.</p></section></div><aside class="profile-panel" aria-label="Profile and contact"><img class="profile-photo" src="manuelpaez_profilepic_november2025.jpg" alt="Portrait of Manuel Paez"><div class="contact-links"><a href="manuelpaez_curriculum_vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a> <a href="manuelpaez_resume_mlre.pdf" target="_blank" rel="noopener noreferrer">Résumé</a> <a href="https://scholar.google.com/citations?user=C5Fel-sAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> <a href="https://github.com/manuelpaeza" target="_blank" rel="noopener noreferrer">GitHub</a> <a href="https://www.linkedin.com/in/manuelpaeza/" target="_blank" rel="noopener noreferrer">LinkedIn</a> <a href="https://x.com/manuel_paeza" target="_blank" rel="noopener noreferrer">X</a></div><p class="contact-email"><a href="mailto:manuel.paez@columbia.edu">manuel.paez@columbia.edu</a></p></aside>
+</main>
+</div>
 </body>
-
 </html>
