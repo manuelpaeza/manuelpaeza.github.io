@@ -27,7 +27,8 @@ is local-only; `package-lock.json` remains tracked. The original CSS-only comman
 
 `cv.html` redirects to the current CV PDF, and `blog.html` redirects to Substack.
 
-External-link review: the former HiLD Code URL
-`https://github.com/Chryseisliu/muon_accelerates_feature_learning` returns public
-HTTP 404 and is omitted pending a replacement. Columbia, LinkedIn, and PNAS
-restrict automated requests; their existing authoritative URLs are retained.
+External-link review: the former HiLD Code URL returned public HTTP 404 and
+was replaced with the user-confirmed
+`https://github.com/Chryseisliu/spectral_normalization_accelerates_feature_learning`.
+Columbia, LinkedIn, and PNAS restrict automated requests; their existing
+authoritative URLs are retained.

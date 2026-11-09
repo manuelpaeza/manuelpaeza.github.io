@@ -11,7 +11,7 @@ papers = [
  ('Research Papers', 'Fast Geometric Spanners via Approximate Nearest Neighbor Search', ['Alexandr Andoni','Manuel Paez','Krish Singal','Tian Zhang'], 'Innovations in Theoretical Computer Science (ITCS), 2027. Accepted.', [('arXiv','https://arxiv.org/abs/2609.26934')]),
  ('Research Papers', 'Asymmetric Similarity Matching: A Normative Framework for Predictive Neural Computation', ['Xuehao Ding','Marco Zenari','Manuel Paez','Dmitri B. Chklovskii'], 'Submitted to Neural Computation, 2026.', []),
  # Preserve agreed website order until the HiLD manuscript author order is confirmed.
- ('Workshop Publications', 'Rank-One Spectral Normalization Accelerates Projected Feature Learning', ['Chryseis Xinyi Liu','Manuel Paez'], 'ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD), 2026.', [('Paper','https://openreview.net/forum?id=ufLJLAUCO6')]),
+ ('Workshop Publications', 'Rank-One Spectral Normalization Accelerates Projected Feature Learning', ['Chryseis Xinyi Liu','Manuel Paez'], 'ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD), 2026.', [('Paper','https://openreview.net/forum?id=ufLJLAUCO6'),('Code','https://github.com/Chryseisliu/spectral_normalization_accelerates_feature_learning')]),
  ('Manuscripts in Preparation', 'Low-Dimensional Embeddings of Ising Disagreement Metrics via Functional Inequalities', ['Manuel Paez','Alexandr Andoni'], 'Manuscript in preparation, 2026.', [])
 ]
 # Optional slides field remains None until a genuine slide deck is supplied.
