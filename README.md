@@ -21,8 +21,9 @@ is local-only; `package-lock.json` remains tracked. The original CSS-only comman
   verification. The approved CV instead lists Paez, Liu; do not silently reconcile.
 - The IEOR course report is a byte-identical copy of the supplied 15-page report.
   It is not a peer-reviewed paper. The separate 11-page draft is not published.
-- Project records support optional slides, currently unset. Supply and verify a
-  genuine slide deck before adding a Slides link.
+- The IEOR Slides link points to the verified 10-page presentation dated November 9,
+  2026. Its bytes are preserved from the supplied presentation. The older 11-page
+  article-format draft remains unpublished.
 - CV and résumé PDFs must remain unchanged unless replacements are supplied.
 
 `cv.html` redirects to the current CV PDF, and `blog.html` redirects to Substack.

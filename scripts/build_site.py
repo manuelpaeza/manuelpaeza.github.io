@@ -14,9 +14,9 @@ papers = [
  ('Workshop Publications', 'Rank-One Spectral Normalization Accelerates Projected Feature Learning', ['Chryseis Xinyi Liu','Manuel Paez'], 'ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD), 2026.', [('Paper','https://openreview.net/forum?id=ufLJLAUCO6'),('Code','https://github.com/Chryseisliu/spectral_normalization_accelerates_feature_learning')]),
  ('Manuscripts in Preparation', 'Low-Dimensional Embeddings of Ising Disagreement Metrics via Functional Inequalities', ['Manuel Paez','Alexandr Andoni'], 'Manuscript in preparation, 2026.', [])
 ]
-# Optional slides field remains None until a genuine slide deck is supplied.
+# Optional slides field links only verified presentation PDFs.
 projects = [
- ('Upper Bound Energy Barriers for Simulated Annealing in Spherical Spin Glasses', 'Manuel Paez · IEOR 8100: Log-Concave Probability · Spring 2026 · Course report', 'IEOR8100_Upper_Bound_Energy_Barriers_Spherical_Spin_Glasses_Paez_2026.pdf', None, None),
+ ('Upper Bound Energy Barriers for Simulated Annealing in Spherical Spin Glasses', 'Manuel Paez · IEOR 8100: Log-Concave Probability · Spring 2026 · Course report', 'IEOR8100_Upper_Bound_Energy_Barriers_Spherical_Spin_Glasses_Paez_2026.pdf', None, 'projects/IEOR8100_Energy_Simulated_Annealing_Pure_Spherical_Spin_Slides_Paez_2026.pdf'),
  ('Provably Learning the Softmax Kernel of an Attention Head via the Method of Moments', 'CS 6998: Theoretical Foundations of LLMs · Course report', 'COMS6998_TheoreticalFoundationsLLMs_manuelpaez_finalproject.pdf', 'https://www.cs.columbia.edu/~djhsu/coms6998-s25/', None),
  ('Survey and Extensions for Sketching Algorithms for Earth-Mover Distance and Chamfer Distance', 'Algorithms for Massive Data · Course report', 'COMSE9886_Algorithms_for_Massive_Data_PaezGuoMckelvie.pdf', 'https://www.cs.columbia.edu/~andoni/algoF23/index.html', None),
  ('Uncovering User Information from Obfuscated K-Clustering', 'Unsupervised Learning · Course report', 'COMSW4774_ClusterPackage_ColemanEyrePaez.pdf', None, None),
@@ -32,7 +32,10 @@ notes = [
 def paper(p):
     _, title, authors, status, links = p
     names = ', '.join('<strong>Manuel Paez</strong>' if a == 'Manuel Paez' else escape(a) for a in authors)
-    return f'<li class="entry"><h3>{escape(title)}</h3><p class="authors">{names}</p><p class="metadata">{escape(status)}</p><p class="entry-links">'+ ' '.join(link('['+label+']',url) for label,url in links)+'</p></li>'
+    status_html = escape(status)
+    for venue in ['Innovations in Theoretical Computer Science (ITCS)', 'Neural Computation', 'ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD)']:
+        status_html = status_html.replace(escape(venue), '<em>'+escape(venue)+'</em>')
+    return f'<li class="entry"><h3>{escape(title)}</h3><p class="authors">{names}</p><p class="metadata">{status_html}</p><p class="entry-links">'+ ' '.join(link('['+label+']',url) for label,url in links)+'</p></li>'
 
 def project(p):
     title, meta, pdf, course, slides = p
@@ -59,7 +62,10 @@ def page(filename, title, description, body, home=False, redirect=None):
 <meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="styles.css?v=20261109-spacing-v2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
+<link rel="stylesheet" href="styles.css?v=20261109-ibm-plex">
 {refresh}
 </head>
 <body>
