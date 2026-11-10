@@ -41,9 +41,7 @@ for path in sorted(ROOT.glob('*.html')):
     assert '<title>'+p.meta['og:title']+'</title>' in s
     if path.name in ['index.html','publications.html','projects.html','code.html']:
         assert p.current==[path.name]
-    font_links=[a['href'] for a in p.links if a.get('rel')=='stylesheet' and 'fonts.googleapis.com' in a.get('href','')]
-    assert font_links==['https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Source+Serif+4:wght@400;500;600&display=swap']
-    assert any(a.get('rel')=='preconnect' and a.get('href')=='https://fonts.gstatic.com' and 'crossorigin' in a for a in p.links)
+    assert not any('fonts.googleapis.com' in a.get('href','') or 'fonts.gstatic.com' in a.get('href','') for a in p.links)
     print('PASS',path.name)
 import build_site
 for record in build_site.papers:
@@ -59,3 +57,9 @@ assert '[Slides]' not in (ROOT/'publications.html').read_text()
 assert (ROOT/ieor[4]).read_bytes().startswith(b'%PDF-')
 assert 'simulatedannealing_markovchains_spherical_ham_manuelpaez.pdf' not in ''.join(p.read_text() for p in ROOT.glob('*.html'))
 print('PASS publication parity, all local links, HTML nesting, font/metadata parity, IEOR report/slides, and draft exclusion')
+
+for css_path in ['src/styles.css', 'styles.css']:
+    css=(ROOT/css_path).read_text()
+    assert '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif' in css
+    assert all(font not in css for font in ['Source Serif 4', 'Source Sans 3', 'IBM Plex Sans'])
+print('PASS system font stack and no hosted font imports')
