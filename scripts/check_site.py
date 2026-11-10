@@ -42,7 +42,7 @@ for path in sorted(ROOT.glob('*.html')):
     if path.name in ['index.html','publications.html','projects.html','code.html']:
         assert p.current==[path.name]
     font_links=[a['href'] for a in p.links if a.get('rel')=='stylesheet' and 'fonts.googleapis.com' in a.get('href','')]
-    assert font_links==['https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap']
+    assert font_links==['https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Source+Serif+4:wght@400;500;600&display=swap']
     assert any(a.get('rel')=='preconnect' and a.get('href')=='https://fonts.gstatic.com' and 'crossorigin' in a for a in p.links)
     print('PASS',path.name)
 import build_site

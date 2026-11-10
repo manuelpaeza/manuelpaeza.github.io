@@ -64,8 +64,8 @@ def page(filename, title, description, body, home=False, redirect=None):
 <meta property="og:url" content="{canonical}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap">
-<link rel="stylesheet" href="styles.css?v=20261109-ibm-plex">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="styles.css?v=20261109-source-fonts">
 {refresh}
 </head>
 <body>
@@ -85,7 +85,7 @@ def main():
     bio = f'''<section aria-labelledby="introduction"><h2 id="introduction">Introduction</h2>
     <p>Hello! I am a final-year M.S. student in Computer Science at Columbia University, where I am advised by {link('Alexandr Andoni','https://www.cs.columbia.edu/~andoni/')} and {link('Dmitri “Mitya” Chklovskii','https://neural-circuits-and-algorithms.github.io/')}. I previously earned B.A. degrees in Computer Science and Mathematics from {link('Columbia University','https://www.columbia.edu/')}.</p>
     <p>My research interests lie at the intersection of theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning. I am particularly interested in high-dimensional randomized optimization, Markov chain mixing, and algorithms for sampling and inference in complex probabilistic models. More broadly, I seek to understand how the geometric and probabilistic structure of high-dimensional systems shapes computational complexity and the limits of efficient algorithms.</p></section>'''
-    contacts = [('CV','manuelpaez_curriculum_vitae.pdf'),('Résumé','manuelpaez_resume_mlre.pdf'),('Google Scholar','https://scholar.google.com/citations?user=C5Fel-sAAAAJ&hl=en'),('GitHub','https://github.com/manuelpaeza'),('LinkedIn','https://www.linkedin.com/in/manuelpaeza/'),('X','https://x.com/manuel_paeza'),('Writing','https://substack.com/@manuelpaez')]
+    contacts = [('CV','manuelpaez_curriculum_vitae.pdf'),('Résumé','manuelpaez_resume_mlre.pdf'),('Google Scholar','https://scholar.google.com/citations?user=C5Fel-sAAAAJ&hl=en'),('GitHub','https://github.com/manuelpaeza'),('LinkedIn','https://www.linkedin.com/in/manuelpaeza/'),('X','https://x.com/manuel_paeza')]
     home = '<div class="main-column">'+bio+'<section><h2>Selected Publications</h2>'+listing(papers,paper)+'<p>'+link('All publications →','publications.html')+'</p></section>'
     home += '<section><h2>Teaching</h2><ul class="teaching"><li>Course Assistant, CS 6998: Algorithms for Massive Data · '+link('Fall 2025','https://www.cs.columbia.edu/~andoni/algoF25/index.html')+'</li><li>Course Assistant, CS 4995: Randomized Algorithms · Fall 2024</li></ul></section>'
     home += '<section><h2>Selected Course Projects</h2>'+listing(projects[:3],project)+'<p>'+link('All projects and lecture notes →','projects.html')+'</p></section>'

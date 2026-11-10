@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
+:root { color-scheme: light; --font-body: "Source Sans 3", Arial, sans-serif; --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif; }
 html { scroll-behavior: auto; }
-body { margin: 0; background: #fff; color: #222; font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.55; font-weight: 400; }
+body { margin: 0; background: #fff; color: #222; font-family: var(--font-body); font-size: 15px; line-height: 1.55; font-weight: 400; }
 a { color: #1d4ed8; text-decoration: none; text-underline-offset: 3px; }
 a:hover { color: #C33A1D; text-decoration: underline; }
 a:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 4px; border-radius: 2px; }
 .site-shell { max-width: 1120px; width: calc(100% - 64px); margin: 0 auto; padding: 52px 0 64px; }
 .site-header { text-align: center; margin-bottom: 40px; }
-h1 { font-size: 26px; font-weight: 500; line-height: 1.3; margin: 0; }
+h1 { font-family: var(--font-heading); font-size: 27px; font-weight: 600; line-height: 1.3; margin: 0; }
 h1 a { color: #222; }
 nav { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 28px; row-gap: 10px; margin-top: 18px; }
 nav a { font-size: 15px; }
@@ -19,8 +19,8 @@ nav a[aria-current="page"] { color: #222; text-decoration: underline; }
 .main-column, .profile-panel { min-width: 0; }
 .page-content { max-width: 900px; margin: 0 auto; }
 section + section { margin-top: 32px; }
-h2 { font-size: 19px; font-weight: 500; line-height: 1.4; margin: 0 0 14px; }
-h3 { font-size: 15px; font-weight: 500; line-height: 1.5; margin: 0; }
+h2 { font-family: var(--font-heading); font-size: 20px; font-weight: 600; line-height: 1.4; margin: 0 0 14px; }
+h3 { font-size: 15px; font-weight: 600; line-height: 1.5; margin: 0; }
 p { margin: 0 0 14px; }
 .bibliography { list-style: none; padding: 0; margin: 0 0 16px; }
 .entry { margin: 0 0 20px; }
