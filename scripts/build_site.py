@@ -62,7 +62,7 @@ def page(filename, title, description, body, home=False, redirect=None):
 <meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="styles.css?v=20261109-system-restored">
+<link rel="stylesheet" href="styles.css?v=20261109-lightweight">
 {refresh}
 </head>
 <body>
