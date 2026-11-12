@@ -12,7 +12,7 @@ papers = [
  ('Research Papers', 'Asymmetric Similarity Matching: A Normative Framework for Predictive Neural Computation', ['Xuehao Ding','Marco Zenari','Manuel Paez','Dmitri B. Chklovskii'], 'Submitted to Neural Computation, 2026.', []),
  # Preserve agreed website order until the HiLD manuscript author order is confirmed.
  ('Workshop Publications', 'Rank-One Spectral Normalization Accelerates Projected Feature Learning', ['Chryseis Xinyi Liu','Manuel Paez'], 'ICML 2026 Workshop on High-Dimensional Learning Dynamics (HiLD), 2026.', [('Paper','https://openreview.net/forum?id=ufLJLAUCO6'),('Code','https://github.com/Chryseisliu/spectral_normalization_accelerates_feature_learning')]),
- ('Manuscripts in Preparation', 'Low-Dimensional Embeddings of Ising Disagreement Metrics via Functional Inequalities', ['Manuel Paez','Alexandr Andoni'], 'Manuscript in preparation, 2026.', [])
+ ('Manuscripts in Preparation', 'Low-Dimensional ℓ₁ Embeddings of Ising Disagreement Metrics via Functional Inequalities', ['Manuel Paez','Alexandr Andoni'], 'Manuscript in preparation, 2026.', [])
 ]
 # Optional slides field links only verified presentation PDFs.
 projects = [
