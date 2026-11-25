@@ -1,0 +1,68 @@
+<!-- Authoring fixture only: never register this example as a research result.
+     Body paths resolve from ml-notes/<category>/<slug>.html, two levels deep.
+     Replace examples and remove unused sections before publication. -->
+<section aria-labelledby="overview">
+  <h3 id="overview">Overview</h3>
+  <p>This unpublished template demonstrates formatting, not a research result.
+  State the question, assumptions, and scope here. Inline mathematics uses
+  \(x \in \mathbb{R}^d\). Cite a reference using <a href="#ref-example">[1]</a>.</p>
+</section>
+<section aria-labelledby="analysis">
+  <h3 id="analysis">Mathematical analysis</h3>
+  <p>An unnumbered display:</p>
+  \[ f(x) = \tfrac{1}{2}\lVert x\rVert_2^2. \]
+  <p>An AMS equation is numbered automatically and can be referenced as \(\eqref{eq:update}\):</p>
+  \begin{equation}
+  x_{t+1} = x_t - \eta\nabla f(x_t). \label{eq:update}
+  \end{equation}
+  <div class="statement definition" id="def-example"><p><strong>Definition 1 (Example).</strong>
+  A point \(x\) is stationary if \(\nabla f(x)=0\).</p></div>
+  <div class="statement theorem" id="thm-example"><p><strong>Theorem 1 (Formatting example).</strong>
+  For \(f(x)=\frac{1}{2}\lVert x\rVert_2^2\), the unique minimizer is \(0\).</p></div>
+  <p><em>Proof.</em> The squared norm is nonnegative and vanishes only at zero. ∎</p>
+  <div class="statement lemma"><p><strong>Lemma 1 (Example).</strong> For this quadratic, \(\nabla f(x)=x\).</p></div>
+  <div class="statement proposition"><p><strong>Proposition 1 (Example).</strong>
+  With \(\eta=1\), the update in \(\eqref{eq:update}\) reaches zero in one step.</p></div>
+</section>
+<section aria-labelledby="implementation">
+  <h3 id="implementation">Implementation</h3>
+  <p>Python and PyTorch both use <code>language-python</code>. Escape HTML characters inside code.</p>
+  <pre tabindex="0" aria-label="Python example"><code class="language-python">def gradient_step(x, gradient, learning_rate):
+    return x - learning_rate * gradient
+</code></pre>
+  <pre tabindex="0" aria-label="PyTorch example"><code class="language-python">import torch
+
+x = torch.tensor([1.0, -1.0], requires_grad=True)
+loss = 0.5 * x.square().sum()
+loss.backward()
+with torch.no_grad():
+    x -= 0.1 * x.grad
+</code></pre>
+</section>
+<section aria-labelledby="experiments">
+  <h3 id="experiments">Experimental setup and results</h3>
+  <p>Describe data, model, seeds, optimizer, schedule, compute, evaluation, and limitations.
+  Add actual measurements only after the experiment is complete.</p>
+  <!-- Replace this inline layout illustration with a real image, for example:
+       <img src="../figures/your-measured-result.svg" alt="Describe the measured trend and axes.">
+       Do not publish the example path or this illustration as experimental evidence. -->
+  <figure>
+    <svg viewBox="0 0 640 160" role="img" aria-labelledby="figure-title figure-description">
+      <title id="figure-title">Figure layout example</title>
+      <desc id="figure-description">An empty framed area. No experimental data is shown.</desc>
+      <rect x="1" y="1" width="638" height="158" fill="none" stroke="#d1d5db"></rect>
+      <text x="320" y="85" text-anchor="middle" fill="#555" font-size="18">Figure layout example · no data</text>
+    </svg>
+    <figcaption>Figure 1. Layout example only. Replace with a measured result, descriptive alt text, and a caption.</figcaption>
+  </figure>
+  <div class="table-scroll" tabindex="0" role="region" aria-label="Example experimental record">
+    <table><caption>Table 1. Suggested fields; no experimental results.</caption>
+      <thead><tr><th scope="col">Run</th><th scope="col">Configuration</th><th scope="col">Metric</th></tr></thead>
+      <tbody><tr><td colspan="3">Add verified measurements here.</td></tr></tbody>
+    </table>
+  </div>
+</section>
+<section aria-labelledby="references">
+  <h3 id="references">References</h3>
+  <ol class="references"><li id="ref-example">Replace with author, title, venue, year, and a verified DOI or URL.</li></ol>
+</section>

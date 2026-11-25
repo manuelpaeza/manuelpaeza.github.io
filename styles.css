@@ -526,6 +526,14 @@ video {
   position: relative;
 }
 
+.inline {
+  display: inline;
+}
+
+.table {
+  display: table;
+}
+
 :root {
   color-scheme: light;
 }
@@ -798,4 +806,156 @@ strong {
   nav a {
     font-size: 15px;
   }
+}
+
+/* Research notebook: scoped to preserve the existing academic pages. */
+
+.ml-notebook, .ml-article {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+.ml-notebook > section, .ml-article > section {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.ml-notebook h3, .ml-article h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.ml-notebook h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.note-category {
+  margin: 10px 0;
+}
+
+.resource-group + .resource-group {
+  margin-top: 22px;
+}
+
+.notebook-list, .references {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 8px 0 16px;
+}
+
+.notebook-list li, .references li {
+  margin-bottom: 7px;
+}
+
+.references {
+  list-style: decimal;
+}
+
+.ml-article .article-heading h2 {
+  font-size: 24px;
+}
+
+.ml-article .statement {
+  margin: 20px 0;
+  padding-left: 16px;
+  border-left: 2px solid #cbd5e1;
+}
+
+.ml-article .statement p:last-child {
+  margin-bottom: 0;
+}
+
+.ml-article pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+  margin: 16px 0;
+  background: #f6f7f8;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  line-height: 1.6;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+  overflow-wrap: normal;
+}
+
+.ml-article :not(pre) > code {
+  font-size: 0.9em;
+}
+
+.ml-article figure {
+  margin: 24px 0;
+}
+
+.ml-article figure img, .ml-article figure svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.ml-article figcaption, .ml-article caption {
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.ml-article .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.ml-article table {
+  width: 100%;
+  font-size: 14px;
+}
+
+.ml-article th, .ml-article td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.ml-article caption {
+  caption-side: bottom;
+  padding-top: 8px;
+}
+
+.ml-article mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+  max-width: 100%;
+}
+
+.ml-article .token.comment {
+  color: #626970;
+}
+
+.ml-article .token.keyword, .ml-article .token.builtin {
+  color: #6f2c91;
+}
+
+.ml-article .token.string {
+  color: #236039;
+}
+
+.ml-article .token.number, .ml-article .token.boolean {
+  color: #935315;
+}
+
+.ml-article .token.function {
+  color: #1d4ed8;
+}
+
+.ml-article .token.operator, .ml-article .token.punctuation {
+  color: #444;
 }

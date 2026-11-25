@@ -1,6 +1,8 @@
 """Generate static academic pages from shared bibliography and project records."""
 from pathlib import Path
 from html import escape
+import argparse
+import ml_notes
 ROOT = Path(__file__).resolve().parents[1]
 
 def link(text, url):
@@ -46,8 +48,10 @@ def project(p):
 
 def listing(items, renderer): return '<ul class="bibliography">'+ '\n'.join(renderer(p) for p in items)+'</ul>'
 
-def page(filename, title, description, body, home=False, redirect=None):
-    nav = ' '.join(f'<a href="{url}"'+(' aria-current="page"' if filename==url else '')+f'>{name}</a>' for name,url in [('Home','index.html'),('Publications','publications.html'),('Projects','projects.html'),('Code','code.html'),('CV','manuelpaez_curriculum_vitae.pdf')])
+def page(filename, title, description, body, home=False, redirect=None, extra_head=""):
+    prefix = "../" * (len(Path(filename).parts) - 1)
+    active = "ml-notes.html" if filename.startswith("ml-notes/") else filename
+    nav = ' '.join(f'<a href="{prefix}{url}"'+(' aria-current="page"' if active==url else '')+f'>{name}</a>' for name,url in [('Home','index.html'),('Publications','publications.html'),('Projects','projects.html'),('ML Research Notes','ml-notes.html'),('Code','code.html'),('CV','manuelpaez_curriculum_vitae.pdf')])
     canonical = 'https://manuelpaeza.github.io/'+filename
     refresh = f'<meta http-equiv="refresh" content="0; url={redirect}">' if redirect else ''
     result=f'''<!doctype html>
@@ -62,13 +66,14 @@ def page(filename, title, description, body, home=False, redirect=None):
 <meta property="og:description" content="{escape(description, quote=True)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
-<link rel="stylesheet" href="styles.css?v=20261109-lightweight">
+<link rel="stylesheet" href="{prefix}styles.css?v=20261124-ml-notes">
 {refresh}
+{extra_head}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="site-shell">
-<header class="site-header"><h1><a href="index.html">Manuel Paez</a></h1><nav aria-label="Main navigation">{nav}</nav></header>
+<header class="site-header"><h1><a href="{prefix}index.html">Manuel Paez</a></h1><nav aria-label="Main navigation">{nav}</nav></header>
 <main id="main" class="{'home-grid' if home else ('page-content projects-page' if filename == 'projects.html' else 'page-content')}">
 {body}
 </main>
@@ -76,9 +81,10 @@ def page(filename, title, description, body, home=False, redirect=None):
 </body>
 </html>
 '''
+    (ROOT/filename).parent.mkdir(parents=True, exist_ok=True)
     (ROOT/filename).write_text(result)
 
-def main():
+def main(preview=False):
     bio = f'''<section aria-labelledby="introduction"><h2 id="introduction">Introduction</h2>
     <p>Hello! I am a final-year M.S. student in Computer Science at Columbia University, where I am advised by {link('Alexandr Andoni','https://www.cs.columbia.edu/~andoni/')} and {link('Dmitri “Mitya” Chklovskii','https://neural-circuits-and-algorithms.github.io/')}. I previously earned B.A. degrees in Computer Science and Mathematics from {link('Columbia University','https://www.columbia.edu/')}.</p>
     <p>My research interests lie at the intersection of theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning. I am particularly interested in high-dimensional randomized optimization, Markov chain mixing, and algorithms for sampling and inference in complex probabilistic models. More broadly, I seek to understand how the geometric and probabilistic structure of high-dimensional systems shapes computational complexity and the limits of efficient algorithms.</p></section>'''
@@ -105,7 +111,10 @@ def main():
     page('code.html','Code — Manuel Paez','Research software and computational projects by Manuel Paez.',code+'</section>')
     page('cv.html','Curriculum Vitae — Manuel Paez','Download Manuel Paez’s current curriculum vitae.','<section><h2>Curriculum Vitae</h2><p>Continue to '+link('the current CV (PDF)','manuelpaez_curriculum_vitae.pdf')+'.</p></section>',redirect='manuelpaez_curriculum_vitae.pdf')
     page('blog.html','Writing — Manuel Paez','Writing by Manuel Paez.','<section><h2>Writing</h2><p>Read my writing on '+link('Substack','https://substack.com/@manuelpaez')+'.</p></section>',redirect='https://substack.com/@manuelpaez')
-    print('Generated six static pages.')
+    ml_notes.build(ROOT, page, link, preview)
+    print('Generated seven static pages and registered ML articles.')
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--preview-template", action="store_true", help="Render an unpublished article fixture for local QA")
+    main(parser.parse_args().preview_template)

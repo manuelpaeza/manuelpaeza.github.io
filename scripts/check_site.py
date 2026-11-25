@@ -1,14 +1,17 @@
 """Validate generated HTML nesting, local targets, metadata, and bibliography parity."""
 from html.parser import HTMLParser
+from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
 ROOT=Path(__file__).resolve().parents[1]
 VOID=set('area base br col embed hr img input link meta param source track wbr'.split())
 class Check(HTMLParser):
     def __init__(self,path):
-        super().__init__(convert_charrefs=True); self.path=path; self.stack=[]; self.ids=set(); self.fragments=[]; self.h1=0; self.meta={}; self.links=[]; self.current=[]
+        super().__init__(convert_charrefs=True); self.path=path; self.nav=[]; self.in_nav=False; self.stack=[]; self.ids=set(); self.fragments=[]; self.h1=0; self.meta={}; self.links=[]; self.current=[]
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
+        if tag=='nav': self.in_nav=True
+        if tag=='a' and self.in_nav: self.nav.append(a.get('href'))
         if tag not in VOID: self.stack.append(tag)
         if tag=='h1': self.h1+=1
         if tag=='meta': self.meta[a.get('name',a.get('property',''))]=a.get('content','')
@@ -24,23 +27,28 @@ class Check(HTMLParser):
             if attr not in a: continue
             u=urlsplit(a[attr])
             if not u.scheme and not u.netloc:
-                if u.path: assert (ROOT/unquote(u.path).lstrip('/')).is_file(), (self.path,a[attr])
+                if u.path: assert ((ROOT if u.path.startswith('/') else self.path.parent)/unquote(u.path).lstrip('/')).is_file(), (self.path,a[attr])
                 elif u.fragment: self.fragments.append(u.fragment)
     def handle_endtag(self,tag):
+        if tag=='nav': self.in_nav=False
         assert self.stack and self.stack.pop()==tag, (self.path,tag,'incorrect nesting')
-for path in sorted(ROOT.glob('*.html')):
-    p=Check(path.name); s=path.read_text(); p.feed(s); p.close()
+paths = sorted(ROOT.glob('*.html')) + sorted(p for p in (ROOT/'ml-notes').glob('*/*.html') if p.parent.name not in ['_templates', '_articles'])
+for path in paths:
+    p=Check(path); s=path.read_text(); p.feed(s); p.close()
     assert not p.stack and p.h1==1, path
     assert all(f in p.ids for f in p.fragments),path
     assert '<title>' in s and 'name="description"' in s and 'rel="canonical"' in s
     assert 'polyfill.io' not in s and 'font-[Open_Sans]' not in s
     canonical=[a['href'] for a in p.links if a.get('rel')=='canonical']
-    assert canonical==['https://manuelpaeza.github.io/'+path.name]
+    assert canonical==['https://manuelpaeza.github.io/'+path.relative_to(ROOT).as_posix()]
     assert p.meta['og:url']==canonical[0]
     assert p.meta['og:description']==p.meta['description']
-    assert '<title>'+p.meta['og:title']+'</title>' in s
-    if path.name in ['index.html','publications.html','projects.html','code.html']:
+    assert '<title>'+escape(p.meta['og:title'])+'</title>' in s
+    if path.parent == ROOT and path.name in ['index.html','publications.html','projects.html','code.html','ml-notes.html']:
         assert p.current==[path.name]
+    prefix = '../' * (len(path.relative_to(ROOT).parts) - 1)
+    assert p.nav == [prefix + target for target in ['index.html', 'publications.html', 'projects.html', 'ml-notes.html', 'code.html', 'manuelpaez_curriculum_vitae.pdf']], (path, p.nav)
+    if prefix: assert p.current == [prefix + 'ml-notes.html']
     assert not any('fonts.googleapis.com' in a.get('href','') or 'fonts.gstatic.com' in a.get('href','') for a in p.links)
     print('PASS',path.name)
 import build_site
@@ -63,3 +71,17 @@ for css_path in ['src/styles.css', 'styles.css']:
     assert '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif' in css
     assert all(font not in css for font in ['Source Serif 4', 'Source Sans 3', 'IBM Plex Sans'])
 print('PASS system font stack and no hosted font imports')
+
+import ml_notes
+ml_html = (ROOT/'ml-notes.html').read_text()
+for title, resources in ml_notes.RESOURCES.items():
+    for label, url in resources:
+        assert build_site.link(label, url) in ml_html
+for category in ml_notes.CATEGORIES:
+    assert f'id="{category}"' in ml_html
+assert 'not completed research or published results' in ml_html
+assert '_templates' not in ml_html and '_preview' not in ml_html
+for e in ml_notes.load_entries(ROOT):
+    assert ml_notes.article_path(e) in ml_html
+    assert (ROOT / ml_notes.article_path(e)).is_file()
+print('PASS shared navigation, ML categories, resource links, and published article registry')
