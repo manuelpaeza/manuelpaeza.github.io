@@ -16,7 +16,7 @@ Greek/Cyrillic text, and supported technical symbols without custom subsetting.
 MathJax retains its own math fonts.
 
 Only matching faces load on demand. The shared HTML template preloads Sans
-Regular and Light, used by the body and header on every page. `font-display: swap`
+Regular and Light, used by the body and navigation on every page. `font-display: swap`
 keeps text readable while loading; fonts are served from the same site, without
 requests to an external font service. Existing fallback families are retained.
 

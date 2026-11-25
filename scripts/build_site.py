@@ -68,7 +68,7 @@ def page(filename, title, description, body, home=False, redirect=None, extra_he
 <meta property="og:url" content="{canonical}">
 <link rel="preload" href="{prefix}assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{prefix}assets/fonts/IBMPlexSans-Light.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{prefix}styles.css?v=20261125-plex">
+<link rel="stylesheet" href="{prefix}styles.css?v=20261125-hybrid">
 {refresh}
 {extra_head}
 </head>
@@ -90,16 +90,8 @@ def main(preview=False):
     bio = f'''<section aria-labelledby="introduction"><h2 id="introduction">Introduction</h2>
     <p>Hello! I am a final-year M.S. student in Computer Science at Columbia University, where I am advised by {link('Alexandr Andoni','https://www.cs.columbia.edu/~andoni/')} and {link('Dmitri “Mitya” Chklovskii','https://neural-circuits-and-algorithms.github.io/')}. I previously earned B.A. degrees in Computer Science and Mathematics from {link('Columbia University','https://www.columbia.edu/')}.</p>
     <p>My research interests lie at the intersection of theoretical computer science, high-dimensional probability, statistical mechanics, and machine learning. I am particularly interested in the mathematical foundations of high-dimensional random optimization and algorithms for sampling and inference in complex probabilistic models. More broadly, I seek to understand how the geometric and probabilistic structure of high-dimensional random systems shapes their computational properties and the limits of efficient algorithms.</p></section>'''
-    research_directions = '<section aria-labelledby="research-directions"><h2 id="research-directions">Research Directions</h2><ul class="bibliography">'
-    for title, description in [
-        ('High-Dimensional Random Optimization', 'Understanding how the geometry of high-dimensional random nonconvex landscapes shapes the design and computational limits of efficient optimization algorithms. I am particularly interested in spin glasses, random perceptrons, algorithmic thresholds, and message-passing methods.'),
-        ('Sampling, Inference, and High-Dimensional Probability', 'Understanding how probabilistic dependence and geometric structure influence the computational properties of high-dimensional probability distributions. My interests include Gibbs measures, Markov chain mixing, functional inequalities, stochastic localization, and metric embeddings.'),
-        ('Optimization and Learning Dynamics', 'Understanding the mathematical mechanisms underlying learning and optimization in neural networks, with particular interests in spectral geometry, curvature, feature learning, and training dynamics.'),
-    ]:
-        research_directions += f'<li class="entry"><h3><strong>{escape(title)}</strong></h3><p>{escape(description)}</p></li>'
-    research_directions += '</ul></section>'
-    contacts = [('CV','manuelpaez_curriculum_vitae.pdf'),('Résumé','manuelpaez_resume_mlre.pdf'),('Google Scholar','https://scholar.google.com/citations?user=C5Fel-sAAAAJ&hl=en'),('GitHub','https://github.com/manuelpaeza'),('LinkedIn','https://www.linkedin.com/in/manuelpaeza/'),('X','https://x.com/manuel_paeza')]
-    home = '<div class="main-column">'+bio+research_directions+'<section><h2>Selected Publications</h2>'+listing(papers,paper)+'<p>'+link('All publications →','publications.html')+'</p></section>'
+    contacts = [('CV','manuelpaez_curriculum_vitae.pdf'),('Google Scholar','https://scholar.google.com/citations?user=C5Fel-sAAAAJ&hl=en'),('GitHub','https://github.com/manuelpaeza'),('LinkedIn','https://www.linkedin.com/in/manuelpaeza/'),('X','https://x.com/manuel_paeza')]
+    home = '<div class="main-column">'+bio+'<section><h2>Selected Publications</h2>'+listing(papers,paper)+'<p>'+link('All publications →','publications.html')+'</p></section>'
     home += '<section><h2>Teaching</h2><ul class="teaching"><li>Course Assistant, CS 6998: Algorithms for Massive Data · '+link('Fall 2025','https://www.cs.columbia.edu/~andoni/algoF25/index.html')+'</li><li>Course Assistant, CS 4995: Randomized Algorithms · Fall 2024</li></ul></section>'
     home += '<section><h2>Selected Course Projects</h2>'+listing(projects[:3],project)+'<p>'+link('All projects and lecture notes →','projects.html')+'</p></section>'
     home += '<section><h2>Personal Interests</h2><p>Outside of research, I enjoy reading novels and publications such as Bloomberg, the Financial Times, and The Economist. I also enjoy ballet, opera, and orchestral performances, visiting art galleries and coffee shops, cooking, and staying active through squash, fencing, soccer, running, and tennis.</p></section></div>'
