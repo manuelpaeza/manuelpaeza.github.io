@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 from html import escape
 from pathlib import Path
+import re
 from urllib.parse import urlsplit, unquote
 ROOT=Path(__file__).resolve().parents[1]
 VOID=set('area base br col embed hr img input link meta param source track wbr'.split())
@@ -69,8 +70,13 @@ print('PASS publication parity, all local links, HTML nesting, font/metadata par
 for css_path in ['src/styles.css', 'styles.css']:
     css=(ROOT/css_path).read_text()
     assert '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif' in css
-    assert all(font not in css for font in ['Source Serif 4', 'Source Sans 3', 'IBM Plex Sans'])
-print('PASS system font stack and no hosted font imports')
+    assert 'font-family: "IBM Plex Sans", -apple-system' in css
+    assert 'font-family: "IBM Plex Mono", ui-monospace' in css
+    assert 'font-display: swap' in css
+    assert '#C33A1D' not in css
+    for asset in re.findall(r'url\("(assets/fonts/[^"]+\.woff2)"\)', css):
+        assert (ROOT/asset).read_bytes().startswith(b'wOF2'), asset
+print('PASS local IBM Plex fonts, fallbacks, and no external font imports')
 
 import ml_notes
 ml_html = (ROOT/'ml-notes.html').read_text()

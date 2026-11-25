@@ -2,19 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
+/* Local fonts are resolved relative to the generated root styles.css. */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexMono-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/IBMPlexMono-SemiBoldItalic.woff2") format("woff2");
+}
+
+:root {
+  color-scheme: light;
+  --color-accent: #1D4ED8;
+  --color-accent-hover: #1E40AF;
+  --color-text: #222222;
+  --color-secondary: #555555;
+  --color-tertiary: #737373;
+  --color-background: #FFFFFF;
+  --color-surface: #F7F7F7;
+  --color-border: #E5E5E5;
+}
 html { scroll-behavior: auto; }
-body { margin: 0; background: #fff; color: #222; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.55; font-weight: 400; }
-a { color: #1d4ed8; text-decoration: none; text-underline-offset: 3px; }
-a:hover { color: #C33A1D; text-decoration: underline; }
-a:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 4px; border-radius: 2px; }
+body { margin: 0; background: var(--color-background); color: var(--color-text); font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.55; font-weight: 400; }
+code, kbd, pre, samp { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+a { color: var(--color-accent); text-decoration: none; text-underline-offset: 3px; }
+a:hover { color: var(--color-accent-hover); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; border-radius: 2px; }
 .site-shell { max-width: 1120px; width: calc(100% - 64px); margin: 0 auto; padding: 52px 0 64px; }
 .site-header { text-align: center; margin-bottom: 40px; }
 h1 { font-size: 27px; font-weight: 300; line-height: 1.3; margin: 0; }
-h1 a { color: #222; }
+h1 a { color: var(--color-text); }
 nav { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 28px; row-gap: 10px; margin-top: 18px; }
 nav a { font-size: 15px; font-weight: 300; }
-nav a[aria-current="page"] { color: #222; text-decoration: underline; }
+nav a[aria-current="page"] { color: var(--color-text); text-decoration: underline; }
 .home-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 48px; align-items: start; }
 .main-column, .profile-panel { min-width: 0; }
 .page-content { max-width: 900px; margin: 0 auto; }
@@ -26,7 +134,7 @@ p { margin: 0 0 14px; }
 .entry { margin: 0 0 20px; }
 .entry p { margin: 3px 0 0; }
 .authors, .metadata, .entry-links { font-size: 14px; line-height: 1.55; }
-.metadata { color: #555; }
+.metadata { color: var(--color-secondary); }
 .entry-links a { display: inline-block; margin-right: 8px; }
 .entry-links:empty { display: none; }
 strong { font-weight: 600; }
@@ -42,7 +150,7 @@ strong { font-weight: 600; }
 .code-entry .entry-links { margin-top: 2px; margin-bottom: 0; }
 .projects-page .entry { margin-bottom: 16px; }
 .projects-page .entry p { margin-top: 2px; margin-bottom: 0; }
-.skip-link { position: absolute; top: -100px; left: 16px; padding: 8px 12px; background: #fff; }
+.skip-link { position: absolute; top: -100px; left: 16px; padding: 8px 12px; background: var(--color-background); }
 .skip-link:focus { top: 8px; }
 @media (max-width: 820px) {
   .site-shell { width: calc(100% - 40px); padding-top: 32px; }
@@ -70,7 +178,7 @@ strong { font-weight: 600; }
 .ml-notebook > section, .ml-article > section {
   margin-top: 30px;
   padding-top: 22px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--color-border);
 }
 .ml-notebook h3, .ml-article h3 {
   font-size: 18px;
@@ -95,7 +203,7 @@ strong { font-weight: 600; }
 .ml-article .statement {
   margin: 20px 0;
   padding-left: 16px;
-  border-left: 2px solid #cbd5e1;
+  border-left: 2px solid var(--color-border);
 }
 .ml-article .statement p:last-child { margin-bottom: 0; }
 .ml-article pre {
@@ -103,8 +211,8 @@ strong { font-weight: 600; }
   overflow-x: auto;
   padding: 16px;
   margin: 16px 0;
-  background: #f6f7f8;
-  border: 1px solid #e5e7eb;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   font-size: 14px;
   line-height: 1.6;
   tab-size: 4;
@@ -115,18 +223,18 @@ strong { font-weight: 600; }
 .ml-article figure img, .ml-article figure svg { max-width: 100%; height: auto; }
 .ml-article figcaption, .ml-article caption {
   font-size: 14px;
-  color: #555;
+  color: var(--color-tertiary);
   text-align: left;
   margin-top: 8px;
 }
 .ml-article .table-scroll { max-width: 100%; overflow-x: auto; margin: 20px 0; }
 .ml-article table { width: 100%; font-size: 14px; }
-.ml-article th, .ml-article td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #d1d5db; }
+.ml-article th, .ml-article td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--color-border); }
 .ml-article caption { caption-side: bottom; padding-top: 8px; }
 .ml-article mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 4px 0; max-width: 100%; }
 .ml-article .token.comment { color: #626970; }
 .ml-article .token.keyword, .ml-article .token.builtin { color: #6f2c91; }
 .ml-article .token.string { color: #236039; }
 .ml-article .token.number, .ml-article .token.boolean { color: #935315; }
-.ml-article .token.function { color: #1d4ed8; }
+.ml-article .token.function { color: var(--color-accent); }
 .ml-article .token.operator, .ml-article .token.punctuation { color: #444; }

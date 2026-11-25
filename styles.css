@@ -534,8 +534,162 @@ video {
   display: table;
 }
 
+/* Local fonts are resolved relative to the generated root styles.css. */
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Sans";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexSans-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexMono-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url("assets/fonts/IBMPlexMono-SemiBoldItalic.woff2") format("woff2");
+}
+
 :root {
   color-scheme: light;
+  --color-accent: #1D4ED8;
+  --color-accent-hover: #1E40AF;
+  --color-text: #222222;
+  --color-secondary: #555555;
+  --color-tertiary: #737373;
+  --color-background: #FFFFFF;
+  --color-surface: #F7F7F7;
+  --color-border: #E5E5E5;
 }
 
 html {
@@ -544,27 +698,31 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
-  color: #222;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   font-size: 15px;
   line-height: 1.55;
   font-weight: 400;
 }
 
+code, kbd, pre, samp {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 a {
-  color: #1d4ed8;
+  color: var(--color-accent);
   text-decoration: none;
   text-underline-offset: 3px;
 }
 
 a:hover {
-  color: #C33A1D;
+  color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
 a:focus-visible {
-  outline: 2px solid #1d4ed8;
+  outline: 2px solid var(--color-accent);
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -589,7 +747,7 @@ h1 {
 }
 
 h1 a {
-  color: #222;
+  color: var(--color-text);
 }
 
 nav {
@@ -608,7 +766,7 @@ nav a {
 }
 
 nav a[aria-current="page"] {
-  color: #222;
+  color: var(--color-text);
   text-decoration: underline;
 }
 
@@ -670,7 +828,7 @@ p {
 }
 
 .metadata {
-  color: #555;
+  color: var(--color-secondary);
 }
 
 .entry-links a {
@@ -753,7 +911,7 @@ strong {
   top: -100px;
   left: 16px;
   padding: 8px 12px;
-  background: #fff;
+  background: var(--color-background);
 }
 
 .skip-link:focus {
@@ -821,7 +979,7 @@ strong {
 .ml-notebook > section, .ml-article > section {
   margin-top: 30px;
   padding-top: 22px;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--color-border);
 }
 
 .ml-notebook h3, .ml-article h3 {
@@ -865,7 +1023,7 @@ strong {
 .ml-article .statement {
   margin: 20px 0;
   padding-left: 16px;
-  border-left: 2px solid #cbd5e1;
+  border-left: 2px solid var(--color-border);
 }
 
 .ml-article .statement p:last-child {
@@ -877,8 +1035,8 @@ strong {
   overflow-x: auto;
   padding: 16px;
   margin: 16px 0;
-  background: #f6f7f8;
-  border: 1px solid #e5e7eb;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   font-size: 14px;
   line-height: 1.6;
   -moz-tab-size: 4;
@@ -902,7 +1060,7 @@ strong {
 
 .ml-article figcaption, .ml-article caption {
   font-size: 14px;
-  color: #555;
+  color: var(--color-tertiary);
   text-align: left;
   margin-top: 8px;
 }
@@ -921,7 +1079,7 @@ strong {
 .ml-article th, .ml-article td {
   text-align: left;
   padding: 10px 12px;
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .ml-article caption {
@@ -953,7 +1111,7 @@ strong {
 }
 
 .ml-article .token.function {
-  color: #1d4ed8;
+  color: var(--color-accent);
 }
 
 .ml-article .token.operator, .ml-article .token.punctuation {
