@@ -1,0 +1,1146 @@
+{
+  "checked": "2026-11-25",
+  "scope": "All 116 supplied entries (115 unique URLs), authoritative replacements, and one additional Paquette lecture manuscript. Four automation-blocked sites verified with the web reader; Notion identity confirmed through Columbia. No unresolved resource identities; Notion interactive contents and HTTPS for the Sutton/Barto site remain unverified.",
+  "resources": [
+    {
+      "requested_title": "Stanford CS 312 — Deep Learning Alchemy",
+      "requested_url": "https://cs312.stanford.edu/",
+      "title": "Stanford CS 312 — Deep Learning Alchemy",
+      "url": "https://deep-learning-alchemy.github.io/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Deep Learning Alchemy | Stanford CS 312"
+    },
+    {
+      "requested_title": "Stanford CS 336 — Language Modeling from Scratch",
+      "requested_url": "https://cs336.stanford.edu/",
+      "title": "Stanford CS 336 — Language Modeling from Scratch",
+      "url": "https://cs336.stanford.edu/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Stanford CS336 | Language Modeling from Scratch"
+    },
+    {
+      "requested_title": "Stanford MS&E 319 — Efficient Generative Language Models",
+      "requested_url": "https://web.stanford.edu/class/msande319/",
+      "title": "Stanford MS&E 319 — Efficient Generative Language Models",
+      "url": "https://web.stanford.edu/class/msande319/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "MS&E 319: Efficient Generative Language Models | Stanford, Autumn 2026 A block-sparse causal attention mask: a global sink column, a local diagonal band, and one global block."
+    },
+    {
+      "requested_title": "Alexandr Andoni and Edo Liberty — Algorithms in Large Language Models",
+      "requested_url": "https://www.cs.columbia.edu/~andoni/algoF26/index.html",
+      "title": "Alexandr Andoni and Edo Liberty — Algorithms in Large Language Models",
+      "url": "https://edoliberty.com/algorithms-in-large-language-models/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Algorithms in Large Language Models — COMS E6998 (Fall 2026)",
+      "note": "Followed the explicit HTML redirect to the instructors’ current course site."
+    },
+    {
+      "requested_title": "Kaifeng Lyu — Large Language Models from Scratch: Theory and Practice",
+      "requested_url": "https://kaifeng.ac/llms-from-scratch/2025/",
+      "title": "Kaifeng Lyu — Large Language Models from Scratch: Theory and Practice",
+      "url": "https://kaifeng.ac/llms-from-scratch/2025/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Large Language Models from Scratch: Theory and Practice (Fall 2025) | Kaifeng Lyu"
+    },
+    {
+      "requested_title": "Daniel Hsu — Theoretical Foundations of Large Language Models",
+      "requested_url": "https://djhsu.notion.site/COMS-6998-7-Spring-2025-Theoretical-Foundations-of-Large-Language-Models-127a251f6d5d80f6b037dcca22bf4b85",
+      "title": "Daniel Hsu — Theoretical Foundations of Large Language Models",
+      "url": "https://djhsu.notion.site/COMS-6998-7-Spring-2025-Theoretical-Foundations-of-Large-Language-Models-127a251f6d5d80f6b037dcca22bf4b85",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Notion",
+      "note": "Notion returns a JavaScript shell. Exact course title, instructor, and URL independently confirmed by Columbia’s official course catalog: https://www.cs.columbia.edu/education/courses/ . Interactive Notion contents were not inspected."
+    },
+    {
+      "requested_title": "Stanford CS 224N — Natural Language Processing with Deep Learning",
+      "requested_url": "https://web.stanford.edu/class/cs224n/",
+      "title": "Stanford CS 224N — Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Stanford CS 224N | Natural Language Processing with Deep Learning"
+    },
+    {
+      "requested_title": "Elliot Paquette — Power Laws in Data and Optimization",
+      "requested_url": "https://elliotpaquette.github.io/summer-school-2026-notes/",
+      "title": "Elliot Paquette — Power Laws in Data and Optimization",
+      "url": "https://elliotpaquette.github.io/summer-school-2026-notes/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Power Laws in Data and Optimization"
+    },
+    {
+      "requested_title": "Elliot Paquette — Random Matrix Theory of High-Dimensional Optimization",
+      "requested_url": "https://elliotpaquette.github.io/notes/RMTandOptimization-20240701.pdf",
+      "title": "Elliot Paquette — Random Matrix Theory of High-Dimensional Optimization",
+      "url": "https://elliotpaquette.github.io/notes/RMTandOptimization-20240701.pdf",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": ""
+    },
+    {
+      "requested_title": "Courtney and Elliot Paquette — High-Dimensional Optimization",
+      "requested_url": "https://cypaquette.github.io/Research/High_dimensional_optimization_survey.pdf",
+      "title": "Courtney and Elliot Paquette — High-Dimensional Optimization",
+      "url": "https://cypaquette.github.io/Research/High_dimensional_optimization_survey.pdf",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": ""
+    },
+    {
+      "requested_title": "Elliot Paquette — Research and Lecture Notes",
+      "requested_url": "https://elliotpaquette.github.io/",
+      "title": "Elliot Paquette — Research and Lecture Notes",
+      "url": "https://elliotpaquette.github.io/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Elliot Paquette"
+    },
+    {
+      "requested_title": "Courtney Paquette — Research and Lecture Notes",
+      "requested_url": "https://cypaquette.github.io/",
+      "title": "Courtney Paquette — Research and Lecture Notes",
+      "url": "https://cypaquette.github.io/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Courtney\r\nPaquette"
+    },
+    {
+      "requested_title": "Bottou, Curtis, and Nocedal — Optimization Methods for Large-Scale Machine Learning",
+      "requested_url": "https://arxiv.org/abs/1606.04838",
+      "title": "Optimization Methods for Large-Scale Machine Learning",
+      "url": "https://arxiv.org/abs/1606.04838",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Optimization Methods for Large-Scale Machine Learning",
+      "authors": "Léon Bottou, Frank E. Curtis, Jorge Nocedal",
+      "author_count": 3
+    },
+    {
+      "requested_title": "Sébastien Bubeck — Convex Optimization: Algorithms and Complexity",
+      "requested_url": "https://arxiv.org/abs/1405.4980",
+      "title": "Convex Optimization: Algorithms and Complexity",
+      "url": "https://arxiv.org/abs/1405.4980",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Convex Optimization: Algorithms and Complexity",
+      "authors": "Sébastien Bubeck",
+      "author_count": 1
+    },
+    {
+      "requested_title": "Stanford EE364B — Advanced Optimization",
+      "requested_url": "https://web.stanford.edu/class/ee364b/lectures.html",
+      "title": "Stanford EE364B — Advanced Optimization",
+      "url": "https://web.stanford.edu/class/ee364b/lectures.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "EE364b: Lecture Slides and Notes"
+    },
+    {
+      "requested_title": "Damek Davis — Numerical Optimization for Data Science and Machine Learning",
+      "requested_url": "https://damek.github.io/STAT-4830/",
+      "title": "Damek Davis — Numerical Optimization for Data Science and Machine Learning",
+      "url": "https://damek.github.io/STAT-4830/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Course Overview | STAT 4830: Numerical Optimization for Data Science and Machine Learning"
+    },
+    {
+      "requested_title": "EC525 — Optimization for Machine Learning",
+      "requested_url": "https://optmlclass.github.io/",
+      "title": "EC525 — Optimization for Machine Learning",
+      "url": "https://optmlclass.github.io/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "EC525: Optimization for Machine Learning"
+    },
+    {
+      "requested_title": "Stephan Wojtowytsch — Optimization for Deep Learning",
+      "requested_url": "https://www.swojtowytsch.com/teaching/689-deep-learning/optimization-for-deep-learning",
+      "title": "Stephan Wojtowytsch — Optimization for Deep Learning",
+      "url": "https://www.swojtowytsch.com/teaching/689-deep-learning/optimization-for-deep-learning",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Stephan Wojtowytsch - Optimization for Deep Learning"
+    },
+    {
+      "requested_title": "Theodor Misiakiewicz — Mathematics of Deep Learning",
+      "requested_url": "https://misiakie.github.io/SDS659.html",
+      "title": "Theodor Misiakiewicz — Mathematics of Deep Learning",
+      "url": "https://misiakie.github.io/SDS659.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "S&DS 659: Mathematics of Deep Learning"
+    },
+    {
+      "requested_title": "Sanjeev Arora — Princeton COS 514: Fundamentals of Deep Learning",
+      "requested_url": "https://princetonuniversity.github.io/princeton-cos514-fall25.github.io/",
+      "title": "Sanjeev Arora — Princeton COS 514: Fundamentals of Deep Learning",
+      "url": "https://princetonuniversity.github.io/princeton-cos514-fall25.github.io/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "COS 514: Fundamentals of Deep Learning"
+    },
+    {
+      "requested_title": "Matus Telgarsky — Deep Learning Theory",
+      "requested_url": "https://mjt.cs.illinois.edu/dlt/",
+      "title": "Matus Telgarsky — Deep Learning Theory",
+      "url": "https://mjt.cs.illinois.edu/dlt/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Deep learning theory lecture notes"
+    },
+    {
+      "requested_title": "Lei Wu — Deep Learning Theory",
+      "requested_url": "https://leiwu0.github.io/courses/dl-theory/index.html",
+      "title": "Lei Wu — Topics in Deep Learning Theory",
+      "url": "https://leiwu0.github.io/courses/dl-theory/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": ""
+    },
+    {
+      "requested_title": "Tony Feng — Berkeley Math 270",
+      "requested_url": "https://math.berkeley.edu/~fengt/2025F_270.html",
+      "title": "Tony Feng — Berkeley Math 270: A Survey of Deep Learning for Mathematicians",
+      "url": "https://math.berkeley.edu/~fengt/2025F_270.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Tony Feng's website"
+    },
+    {
+      "requested_title": "Roberts, Yaida, and Hanin — The Principles of Deep Learning Theory",
+      "requested_url": "https://deeplearningtheory.com/",
+      "title": "Roberts, Yaida, and Hanin — The Principles of Deep Learning Theory",
+      "url": "https://deeplearningtheory.com/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "The Principles of Deep Learning Theory"
+    },
+    {
+      "requested_title": "Francis Bach — Learning Theory from First Principles",
+      "requested_url": "https://www.di.ens.fr/~fbach/",
+      "title": "Francis Bach — Learning Theory from First Principles",
+      "url": "https://www.di.ens.fr/~fbach/ltfp_book.pdf",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "",
+      "note": "Linked the final book PDF explicitly listed on the author’s homepage."
+    },
+    {
+      "requested_title": "Francis Bach — Mathematical Machine Learning Research Notes",
+      "requested_url": "https://francisbach.com/",
+      "title": "Francis Bach — Machine Learning Research Blog",
+      "url": "https://francisbach.com/",
+      "http_status": "406",
+      "verification": "Primary-source web reader",
+      "source_title": "Not Acceptable!",
+      "note": "Direct curl returned 406; the web reader retrieved the author’s research blog successfully."
+    },
+    {
+      "requested_title": "MIT 6.7960 — Deep Learning",
+      "requested_url": "https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/resources/lecture-notes/",
+      "title": "MIT 6.7960 — Deep Learning",
+      "url": "https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/resources/lecture-notes/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Deep Learning | Electrical Engineering and Computer Science | MIT OpenCourseWare"
+    },
+    {
+      "requested_title": "Princeton Machine Learning Theory Summer Schools",
+      "requested_url": "https://mlschool.princeton.edu/previous",
+      "title": "Princeton Machine Learning Theory Summer Schools",
+      "url": "https://mlschool.princeton.edu/previous",
+      "http_status": "403",
+      "verification": "Primary-source web reader",
+      "source_title": "Just a moment...",
+      "note": "Direct curl returned 403; the web reader retrieved Princeton’s previous summer-school sessions successfully."
+    },
+    {
+      "requested_title": "Joan Bruna — Mathematics of Deep Learning and Teaching Resources",
+      "requested_url": "https://cims.nyu.edu/~bruna/teaching/",
+      "title": "Joan Bruna — Mathematics of Deep Learning and Teaching Resources",
+      "url": "https://cims.nyu.edu/~bruna/teaching/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Teaching :: Joan Bruna"
+    },
+    {
+      "requested_title": "Ioannis Mitliagkas — Optimization and Deep Learning",
+      "requested_url": "https://mitliagkas.github.io/ift6169-2027/",
+      "title": "Ioannis Mitliagkas — Theoretical Principles for Deep Learning (Winter 2027)",
+      "url": "https://mitliagkas.github.io/ift6169-2027/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "IFT 6169: Theoretical principles for deep learning (Winter 2027) | Ioannis Mitliagkas (Γιάννης Μητλιάγκας)"
+    },
+    {
+      "requested_title": "Official PyTorch Tutorials",
+      "requested_url": "https://docs.pytorch.org/tutorials/",
+      "title": "Official PyTorch Tutorials",
+      "url": "https://docs.pytorch.org/tutorials/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Welcome to PyTorch Tutorials — PyTorch Tutorials 2.15.0+cu132 documentation"
+    },
+    {
+      "requested_title": "Andrej Karpathy — Neural Networks: Zero to Hero",
+      "requested_url": "https://github.com/karpathy/nn-zero-to-hero",
+      "title": "Andrej Karpathy — Neural Networks: Zero to Hero",
+      "url": "https://github.com/karpathy/nn-zero-to-hero",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - karpathy/nn-zero-to-hero: Neural Networks: Zero to Hero · GitHub"
+    },
+    {
+      "requested_title": "Sebastian Raschka — Build a Large Language Model from Scratch",
+      "requested_url": "https://github.com/rasbt/LLMs-from-scratch",
+      "title": "Sebastian Raschka — Build a Large Language Model from Scratch",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - rasbt/LLMs-from-scratch: Implement a ChatGPT-like LLM in PyTorch from scratch, step by step · GitHub"
+    },
+    {
+      "requested_title": "Dive into Deep Learning",
+      "requested_url": "https://d2l.ai/",
+      "title": "Dive into Deep Learning",
+      "url": "https://d2l.ai/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Dive into Deep Learning — Dive into Deep Learning 1.0.3 documentation"
+    },
+    {
+      "requested_title": "Deep-ML — Machine Learning Coding Exercises",
+      "requested_url": "https://www.deep-ml.com/",
+      "title": "Deep-ML — Machine Learning Coding Exercises",
+      "url": "https://www.deep-ml.com/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Deep-ML | Practice Machine Learning"
+    },
+    {
+      "requested_title": "PyTorch Performance Tuning Guide",
+      "requested_url": "https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide",
+      "title": "PyTorch Performance Tuning Guide",
+      "url": "https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Performance Tuning Guide — PyTorch Tutorials 2.15.0+cu132 documentation"
+    },
+    {
+      "requested_title": "Triton Tutorials",
+      "requested_url": "https://triton-lang.org/main/getting-started/tutorials/index.html",
+      "title": "Triton Tutorials",
+      "url": "https://triton-lang.org/main/getting-started/tutorials/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Tutorials — Triton  documentation"
+    },
+    {
+      "requested_title": "GPU MODE — GPU Programming and Performance Lectures",
+      "requested_url": "https://github.com/gpu-mode/lectures",
+      "title": "GPU MODE — GPU Programming and Performance Lectures",
+      "url": "https://github.com/gpu-mode/lectures",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - gpu-mode/lectures: Material for gpu-mode lectures · GitHub"
+    },
+    {
+      "requested_title": "Google Research — Deep Learning Tuning Playbook",
+      "requested_url": "https://github.com/google-research/tuning_playbook",
+      "title": "Google Research — Deep Learning Tuning Playbook",
+      "url": "https://github.com/google-research/tuning_playbook",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - google-research/tuning_playbook: A playbook for systematically maximizing the performance of deep learning models. · GitHub"
+    },
+    {
+      "requested_title": "MLCommons — AlgoPerf",
+      "requested_url": "https://mlcommons.org/benchmarks/algorithms/",
+      "title": "MLCommons — AlgoPerf",
+      "url": "https://mlcommons.org/benchmarks/algorithms/",
+      "http_status": "403",
+      "verification": "Primary-source web reader",
+      "source_title": "Attention Required! | Cloudflare",
+      "note": "Direct curl returned 403; the web reader retrieved the official AlgoPerf benchmark page successfully."
+    },
+    {
+      "requested_title": "Keller Jordan — Muon",
+      "requested_url": "https://kellerjordan.github.io/posts/muon/",
+      "title": "Keller Jordan — Muon",
+      "url": "https://kellerjordan.github.io/posts/muon/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Muon: An optimizer for hidden layers in neural networks | Keller Jordan blog"
+    },
+    {
+      "requested_title": "Jeremy Bernstein — Research Notes",
+      "requested_url": "https://jeremybernste.in/",
+      "title": "Jeremy Bernstein — Research Notes",
+      "url": "https://jeremybernste.in/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "jeremybernste.in"
+    },
+    {
+      "requested_title": "Modular Duality",
+      "requested_url": "https://arxiv.org/abs/2410.21265",
+      "title": "Modular Duality in Deep Learning",
+      "url": "https://arxiv.org/abs/2410.21265",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Modular Duality in Deep Learning",
+      "authors": "Jeremy Bernstein, Laker Newhouse",
+      "author_count": 2
+    },
+    {
+      "requested_title": "EleutherAI — Model Training Cookbook",
+      "requested_url": "https://github.com/EleutherAI/cookbook",
+      "title": "EleutherAI — Model Training Cookbook",
+      "url": "https://github.com/EleutherAI/cookbook",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - EleutherAI/cookbook: Deep learning for dummies. All the practical details and useful utilities that go into working with real models. · GitHub"
+    },
+    {
+      "requested_title": "NanoGPT Speedrun",
+      "requested_url": "https://github.com/KellerJordan/modded-nanogpt",
+      "title": "NanoGPT Speedrun",
+      "url": "https://github.com/KellerJordan/modded-nanogpt",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - KellerJordan/modded-nanogpt: NanoGPT (124M) in 90 seconds · GitHub"
+    },
+    {
+      "requested_title": "Song Mei — Mean Field Asymptotics in Statistical Learning",
+      "requested_url": "https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html",
+      "title": "Song Mei — Mean Field Asymptotics in Statistical Learning",
+      "url": "https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "STAT260: Mean Field Asymptotics in Statistical Learning"
+    },
+    {
+      "requested_title": "EPFL — Statistical Physics for Optimization and Learning",
+      "requested_url": "https://idephics.github.io/EPFLDoctoralLecture2023/",
+      "title": "EPFL — Statistical Physics for Optimization and Learning (2023)",
+      "url": "https://idephics.github.io/EPFLDoctoralLecture2023/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Statistical Physics for Optimization and Learning | A set of lectures given at EPFL in 2023 by Pr. Florent Krzakala and Pr. Lenka Zdeborova"
+    },
+    {
+      "requested_title": "EPFL — Statistical Physics of Machine Learning",
+      "requested_url": "https://sphinxteam.github.io/EPFLDoctoralLecture2021/",
+      "title": "EPFL — Statistical Physics for Optimization and Learning (2021)",
+      "url": "https://sphinxteam.github.io/EPFLDoctoralLecture2021/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Statistical Physics For Optimization and Learning | A Set of Lectures given at EPFL in 2021 by Lenka Zdeborova and Florent Krzakala"
+    },
+    {
+      "requested_title": "Elliot Paquette — High-Dimensional Probability",
+      "requested_url": "https://elliotpaquette.github.io/high-dimensional-probability/course/index.html",
+      "title": "Elliot Paquette — High-Dimensional Probability",
+      "url": "https://elliotpaquette.github.io/high-dimensional-probability/course/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "MATH 598 / 784 · Fall 2026 – High-Dimensional Probability"
+    },
+    {
+      "requested_title": "Roman Vershynin — High-Dimensional Probability",
+      "requested_url": "https://www.math.uci.edu/~rvershynin/teaching/hdp/hdp.html",
+      "title": "Roman Vershynin — High-Dimensional Probability",
+      "url": "https://webapps.math.uci.edu/~rvershyn/teaching/hdp/hdp.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "High-Dimensional Probability",
+      "note": "Original URL returned 404. Corrected the author directory from rvershynin to rvershyn; the author’s course is available."
+    },
+    {
+      "requested_title": "Francis Bach — Learning Theory Course",
+      "requested_url": "https://www.di.ens.fr/~fbach/learning_theory_class_2025/index.html",
+      "title": "Francis Bach — Learning Theory Course",
+      "url": "https://www.di.ens.fr/~fbach/learning_theory_class_2025/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Learning Theory from First Principles"
+    },
+    {
+      "requested_title": "Kevin Murphy — Probabilistic Machine Learning",
+      "requested_url": "https://probml.github.io/pml-book/",
+      "title": "Kevin Murphy — Probabilistic Machine Learning",
+      "url": "https://probml.github.io/pml-book/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "“Probabilistic machine learning”: a book series by Kevin Murphy | pml-book"
+    },
+    {
+      "requested_title": "A Mathematical Perspective on Transformers",
+      "requested_url": "https://arxiv.org/abs/2312.10794",
+      "title": "A mathematical perspective on Transformers",
+      "url": "https://arxiv.org/abs/2312.10794",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "A mathematical perspective on Transformers",
+      "authors": "Borjan Geshkovski et al.",
+      "author_count": 4
+    },
+    {
+      "requested_title": "Formal Algorithms for Transformers",
+      "requested_url": "https://arxiv.org/abs/2207.09238",
+      "title": "Formal Algorithms for Transformers",
+      "url": "https://arxiv.org/abs/2207.09238",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Formal Algorithms for Transformers",
+      "authors": "Mary Phuong, Marcus Hutter",
+      "author_count": 2
+    },
+    {
+      "requested_title": "The Annotated Transformer",
+      "requested_url": "https://nlp.seas.harvard.edu/annotated-transformer/",
+      "title": "The Annotated Transformer",
+      "url": "https://nlp.seas.harvard.edu/annotated-transformer/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "The Annotated Transformer"
+    },
+    {
+      "requested_title": "The Annotated S4",
+      "requested_url": "https://srush.github.io/annotated-s4/",
+      "title": "The Annotated S4",
+      "url": "https://srush.github.io/annotated-s4/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "The Annotated S4"
+    },
+    {
+      "requested_title": "Sebastian Raschka — LLM Architecture Gallery",
+      "requested_url": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "title": "Sebastian Raschka — LLM Architecture Gallery",
+      "url": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "http_status": "406",
+      "verification": "Primary-source web reader",
+      "source_title": "Not Acceptable!",
+      "note": "Direct curl returned 406; the web reader retrieved the author’s architecture gallery successfully."
+    },
+    {
+      "requested_title": "Stanford CS 25 — Transformers United",
+      "requested_url": "https://web.stanford.edu/class/cs25/",
+      "title": "Stanford CS 25 — Transformers United",
+      "url": "https://web.stanford.edu/class/cs25/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "CS25: Transformers United V6 | CS25"
+    },
+    {
+      "requested_title": "Marin — Open Pretraining Research",
+      "requested_url": "https://marin.community/",
+      "title": "Marin — Open Pretraining Research and Training Reports",
+      "url": "https://marin.community/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Marin Target Paloma eval loss, preregistered at 18T tokens Step 326,999: eval loss 2.030 (Oct 25)"
+    },
+    {
+      "requested_title": "Marin Documentation",
+      "requested_url": "https://marin.readthedocs.io/en/latest/",
+      "title": "Marin Documentation",
+      "url": "https://marin.readthedocs.io/en/latest/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Marin Documentation"
+    },
+    {
+      "requested_title": "Hugging Face — The Smol Training Playbook",
+      "requested_url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook",
+      "title": "Hugging Face — The Smol Training Playbook",
+      "url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "The Smol Training Playbook - a Hugging Face Space by HuggingFaceTB"
+    },
+    {
+      "requested_title": "Google DeepMind — How to Scale Your Model",
+      "requested_url": "https://jax-ml.github.io/scaling-book/",
+      "title": "Google DeepMind — How to Scale Your Model",
+      "url": "https://jax-ml.github.io/scaling-book/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": " How To Scale Your Model "
+    },
+    {
+      "requested_title": "Hugging Face — The Ultra-Scale Playbook",
+      "requested_url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+      "title": "Hugging Face — The Ultra-Scale Playbook",
+      "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "The Ultra-Scale Playbook - a Hugging Face Space by nanotron"
+    },
+    {
+      "requested_title": "Allen Institute for AI — OLMo Core",
+      "requested_url": "https://github.com/allenai/OLMo-core",
+      "title": "Allen Institute for AI — OLMo Core",
+      "url": "https://github.com/allenai/OLMo-core",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - allenai/Olmo-core: PyTorch building blocks for the OLMo ecosystem · GitHub"
+    },
+    {
+      "requested_title": "Allen Institute for AI — Model Training Documentation",
+      "requested_url": "https://docs.allenai.org/in_depth/training",
+      "title": "Allen Institute for AI — Model Training Documentation",
+      "url": "https://docs.allenai.org/in_depth/training",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Training models | Ai2 platform documentation"
+    },
+    {
+      "requested_title": "Andrej Karpathy — nanochat",
+      "requested_url": "https://github.com/karpathy/nanochat",
+      "title": "Andrej Karpathy — nanochat",
+      "url": "https://github.com/karpathy/nanochat",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - karpathy/nanochat: The best ChatGPT that $100 can buy. · GitHub"
+    },
+    {
+      "requested_title": "NVIDIA — Megatron-LM",
+      "requested_url": "https://github.com/NVIDIA/Megatron-LM",
+      "title": "NVIDIA — Megatron-LM",
+      "url": "https://github.com/NVIDIA/Megatron-LM",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - NVIDIA/Megatron-LM: Ongoing research training transformer models at scale · GitHub"
+    },
+    {
+      "requested_title": "Microsoft — DeepSpeed",
+      "requested_url": "https://github.com/microsoft/DeepSpeed",
+      "title": "DeepSpeed — Distributed Training and Inference",
+      "url": "https://github.com/deepspeedai/DeepSpeed",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - deepspeedai/DeepSpeed: DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective. · GitHub"
+    },
+    {
+      "requested_title": "Hugging Face — Nanotron",
+      "requested_url": "https://github.com/huggingface/nanotron",
+      "title": "Hugging Face — Nanotron",
+      "url": "https://github.com/huggingface/nanotron",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - huggingface/nanotron: Minimalistic large language model 3D-parallelism training · GitHub"
+    },
+    {
+      "requested_title": "The Llama 3 Herd of Models",
+      "requested_url": "https://arxiv.org/abs/2407.21783",
+      "title": "The Llama 3 Herd of Models",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "The Llama 3 Herd of Models",
+      "authors": "Aaron Grattafiori et al.",
+      "author_count": 561
+    },
+    {
+      "requested_title": "DeepSeek-V2",
+      "requested_url": "https://arxiv.org/abs/2405.04434",
+      "title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",
+      "url": "https://arxiv.org/abs/2405.04434",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",
+      "authors": "DeepSeek-AI et al.",
+      "author_count": 157
+    },
+    {
+      "requested_title": "DeepSeek-V3",
+      "requested_url": "https://arxiv.org/abs/2412.19437",
+      "title": "DeepSeek-V3 Technical Report",
+      "url": "https://arxiv.org/abs/2412.19437",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "DeepSeek-V3 Technical Report",
+      "authors": "DeepSeek-AI et al.",
+      "author_count": 200
+    },
+    {
+      "requested_title": "OLMo 2",
+      "requested_url": "https://arxiv.org/abs/2501.00656",
+      "title": "2 OLMo 2 Furious",
+      "url": "https://arxiv.org/abs/2501.00656",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "2 OLMo 2 Furious",
+      "authors": "Team OLMo et al.",
+      "author_count": 43
+    },
+    {
+      "requested_title": "OLMo — Open Language Model Research",
+      "requested_url": "https://allenai.org/olmo",
+      "title": "OLMo — Open Language Model Research",
+      "url": "https://allenai.org/olmo",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Olmo from Ai2 Olmo 3 Model Flow Olmo 3 Model Flow"
+    },
+    {
+      "requested_title": "Qwen3 Technical Report",
+      "requested_url": "https://arxiv.org/abs/2505.09388",
+      "title": "Qwen3 Technical Report",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Qwen3 Technical Report",
+      "authors": "An Yang et al.",
+      "author_count": 60
+    },
+    {
+      "requested_title": "Kimi K2 Technical Report",
+      "requested_url": "https://arxiv.org/abs/2507.20534",
+      "title": "Kimi K2: Open Agentic Intelligence",
+      "url": "https://arxiv.org/abs/2507.20534",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Kimi K2: Open Agentic Intelligence",
+      "authors": "Kimi Team et al.",
+      "author_count": 200
+    },
+    {
+      "requested_title": "SmolLM3",
+      "requested_url": "https://huggingface.co/blog/smollm3",
+      "title": "SmolLM3",
+      "url": "https://huggingface.co/blog/smollm3",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "SmolLM3: smol, multilingual, long-context reasoner"
+    },
+    {
+      "requested_title": "Marin — Training Reports",
+      "requested_url": "https://marin.community/",
+      "decision": "Consolidated duplicate Marin homepage into Industry Pretraining and Training Systems."
+    },
+    {
+      "requested_title": "OPT: Open Pre-trained Transformer Language Models",
+      "requested_url": "https://arxiv.org/abs/2205.01068",
+      "title": "OPT: Open Pre-trained Transformer Language Models",
+      "url": "https://arxiv.org/abs/2205.01068",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "OPT: Open Pre-trained Transformer Language Models",
+      "authors": "Susan Zhang et al.",
+      "author_count": 19
+    },
+    {
+      "requested_title": "Nathan Lambert — Reinforcement Learning from Human Feedback",
+      "requested_url": "https://rlhfbook.com/",
+      "title": "Nathan Lambert — Reinforcement Learning from Human Feedback",
+      "url": "https://rlhfbook.com/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "requested_title": "Nathan Lambert — Post-Training Course",
+      "requested_url": "https://rlhfbook.com/course",
+      "title": "Nathan Lambert — Post-Training Course",
+      "url": "https://rlhfbook.com/course",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Post-Training Course by Nathan Lambert"
+    },
+    {
+      "requested_title": "Sutton and Barto — Reinforcement Learning: An Introduction",
+      "requested_url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "title": "Sutton and Barto — Reinforcement Learning: An Introduction",
+      "url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Sutton & Barto Book: Reinforcement Learning: An\nIntroduction",
+      "note": "Author’s HTTP page returned 200 and matches the title and authors. HTTPS failed to connect; retained the working original HTTP URL."
+    },
+    {
+      "requested_title": "Berkeley CS 285 — Deep Reinforcement Learning",
+      "requested_url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
+      "title": "Berkeley CS 285 — Deep Reinforcement Learning",
+      "url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "CS 185/285 "
+    },
+    {
+      "requested_title": "Stanford CS 234 — Reinforcement Learning",
+      "requested_url": "https://web.stanford.edu/class/cs234/",
+      "title": "Stanford CS 234 — Reinforcement Learning",
+      "url": "https://web.stanford.edu/class/cs234/",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "CS234: Reinforcement Learning Winter 2026"
+    },
+    {
+      "requested_title": "Hugging Face — Open R1",
+      "requested_url": "https://github.com/huggingface/open-r1",
+      "title": "Hugging Face — Open R1",
+      "url": "https://github.com/huggingface/open-r1",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - huggingface/open-r1: Fully open reproduction of DeepSeek-R1 · GitHub"
+    },
+    {
+      "requested_title": "MIT — Introduction to Flow Matching and Diffusion Models",
+      "requested_url": "https://diffusion.csail.mit.edu/",
+      "title": "MIT — Introduction to Flow Matching and Diffusion Models",
+      "url": "https://diffusion.csail.mit.edu/2026/index.html",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "Flow Matching and Diffusion Models — 2026 Version",
+      "note": "Followed the homepage’s explicit HTML redirect to the 2026 course."
+    },
+    {
+      "requested_title": "Hugging Face — TRL",
+      "requested_url": "https://github.com/huggingface/trl",
+      "title": "Hugging Face — TRL",
+      "url": "https://github.com/huggingface/trl",
+      "http_status": "200",
+      "verification": "Primary-source page",
+      "source_title": "GitHub - huggingface/trl: Train transformer language models with reinforcement learning. · GitHub"
+    },
+    {
+      "requested_title": "Attention Is All You Need",
+      "requested_url": "https://arxiv.org/abs/1706.03762",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Attention Is All You Need",
+      "authors": "Ashish Vaswani et al.",
+      "author_count": 8
+    },
+    {
+      "requested_title": "Scaling Laws for Neural Language Models",
+      "requested_url": "https://arxiv.org/abs/2001.08361",
+      "title": "Scaling Laws for Neural Language Models",
+      "url": "https://arxiv.org/abs/2001.08361",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Scaling Laws for Neural Language Models",
+      "authors": "Jared Kaplan et al.",
+      "author_count": 10
+    },
+    {
+      "requested_title": "Training Compute-Optimal Large Language Models",
+      "requested_url": "https://arxiv.org/abs/2203.15556",
+      "title": "Training Compute-Optimal Large Language Models",
+      "url": "https://arxiv.org/abs/2203.15556",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Training Compute-Optimal Large Language Models",
+      "authors": "Jordan Hoffmann et al.",
+      "author_count": 22
+    },
+    {
+      "requested_title": "Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer",
+      "requested_url": "https://arxiv.org/abs/2203.03466",
+      "title": "Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer",
+      "url": "https://arxiv.org/abs/2203.03466",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer",
+      "authors": "Greg Yang et al.",
+      "author_count": 10
+    },
+    {
+      "requested_title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "requested_url": "https://arxiv.org/abs/2205.14135",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "authors": "Tri Dao et al.",
+      "author_count": 5
+    },
+    {
+      "requested_title": "Adam: A Method for Stochastic Optimization",
+      "requested_url": "https://arxiv.org/abs/1412.6980",
+      "title": "Adam: A Method for Stochastic Optimization",
+      "url": "https://arxiv.org/abs/1412.6980",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Adam: A Method for Stochastic Optimization",
+      "authors": "Diederik P. Kingma, Jimmy Ba",
+      "author_count": 2
+    },
+    {
+      "requested_title": "Decoupled Weight Decay Regularization",
+      "requested_url": "https://arxiv.org/abs/1711.05101",
+      "title": "Decoupled Weight Decay Regularization",
+      "url": "https://arxiv.org/abs/1711.05101",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Decoupled Weight Decay Regularization",
+      "authors": "Ilya Loshchilov, Frank Hutter",
+      "author_count": 2
+    },
+    {
+      "requested_title": "Shampoo: Preconditioned Stochastic Tensor Optimization",
+      "requested_url": "https://arxiv.org/abs/1802.09568",
+      "title": "Shampoo: Preconditioned Stochastic Tensor Optimization",
+      "url": "https://arxiv.org/abs/1802.09568",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Shampoo: Preconditioned Stochastic Tensor Optimization",
+      "authors": "Vineet Gupta, Tomer Koren, Yoram Singer",
+      "author_count": 3
+    },
+    {
+      "requested_title": "SOAP: Improving and Stabilizing Shampoo Using Adam",
+      "requested_url": "https://arxiv.org/abs/2409.11321",
+      "title": "SOAP: Improving and Stabilizing Shampoo using Adam",
+      "url": "https://arxiv.org/abs/2409.11321",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "SOAP: Improving and Stabilizing Shampoo using Adam",
+      "authors": "Nikhil Vyas et al.",
+      "author_count": 8
+    },
+    {
+      "requested_title": "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+      "requested_url": "https://arxiv.org/abs/2305.14342",
+      "title": "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+      "url": "https://arxiv.org/abs/2305.14342",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+      "authors": "Hong Liu et al.",
+      "author_count": 5
+    },
+    {
+      "requested_title": "Symbolic Discovery of Optimization Algorithms (Lion)",
+      "requested_url": "https://arxiv.org/abs/2302.06675",
+      "title": "Symbolic Discovery of Optimization Algorithms",
+      "url": "https://arxiv.org/abs/2302.06675",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Symbolic Discovery of Optimization Algorithms",
+      "authors": "Xiangning Chen et al.",
+      "author_count": 12
+    },
+    {
+      "requested_title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost",
+      "requested_url": "https://arxiv.org/abs/1804.04235",
+      "title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost",
+      "url": "https://arxiv.org/abs/1804.04235",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost",
+      "authors": "Noam Shazeer, Mitchell Stern",
+      "author_count": 2
+    },
+    {
+      "requested_title": "GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection",
+      "requested_url": "https://arxiv.org/abs/2403.03507",
+      "title": "GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection",
+      "url": "https://arxiv.org/abs/2403.03507",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection",
+      "authors": "Jiawei Zhao et al.",
+      "author_count": 6
+    },
+    {
+      "requested_title": "Muon Is Scalable for LLM Training",
+      "requested_url": "https://arxiv.org/abs/2502.16982",
+      "title": "Muon is Scalable for LLM Training",
+      "url": "https://arxiv.org/abs/2502.16982",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Muon is Scalable for LLM Training",
+      "authors": "Jingyuan Liu et al.",
+      "author_count": 28
+    },
+    {
+      "requested_title": "Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability",
+      "requested_url": "https://arxiv.org/abs/2103.00065",
+      "title": "Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability",
+      "url": "https://arxiv.org/abs/2103.00065",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability",
+      "authors": "Jeremy M. Cohen et al.",
+      "author_count": 5
+    },
+    {
+      "requested_title": "Adaptive Gradient Methods at the Edge of Stability",
+      "requested_url": "https://arxiv.org/abs/2207.14484",
+      "title": "Adaptive Gradient Methods at the Edge of Stability",
+      "url": "https://arxiv.org/abs/2207.14484",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Adaptive Gradient Methods at the Edge of Stability",
+      "authors": "Jeremy M. Cohen et al.",
+      "author_count": 11
+    },
+    {
+      "requested_title": "The River Valley Loss Landscape",
+      "requested_url": "https://arxiv.org/abs/2410.05192",
+      "title": "Understanding Warmup-Stable-Decay Learning Rates: A River Valley Loss Landscape Perspective",
+      "url": "https://arxiv.org/abs/2410.05192",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Understanding Warmup-Stable-Decay Learning Rates: A River Valley Loss Landscape Perspective",
+      "authors": "Kaiyue Wen et al.",
+      "author_count": 6
+    },
+    {
+      "requested_title": "Exact Solutions to the Nonlinear Dynamics of Learning in Deep Linear Neural Networks",
+      "requested_url": "https://arxiv.org/abs/1312.6120",
+      "title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
+      "url": "https://arxiv.org/abs/1312.6120",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Exact solutions to the nonlinear dynamics of learning in deep linear neural networks",
+      "authors": "Andrew M. Saxe, James L. McClelland, Surya Ganguli",
+      "author_count": 3
+    },
+    {
+      "requested_title": "Which Algorithmic Choices Matter at Which Batch Sizes?",
+      "requested_url": "https://arxiv.org/abs/1907.04164",
+      "title": "Which Algorithmic Choices Matter at Which Batch Sizes? Insights From a Noisy Quadratic Model",
+      "url": "https://arxiv.org/abs/1907.04164",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Which Algorithmic Choices Matter at Which Batch Sizes? Insights From a Noisy Quadratic Model",
+      "authors": "Guodong Zhang et al.",
+      "author_count": 8
+    },
+    {
+      "requested_title": "An Empirical Model of Large-Batch Training",
+      "requested_url": "https://arxiv.org/abs/1812.06162",
+      "title": "An Empirical Model of Large-Batch Training",
+      "url": "https://arxiv.org/abs/1812.06162",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "An Empirical Model of Large-Batch Training",
+      "authors": "Sam McCandlish et al.",
+      "author_count": 4
+    },
+    {
+      "requested_title": "Don't Decay the Learning Rate, Increase the Batch Size",
+      "requested_url": "https://arxiv.org/abs/1711.00489",
+      "title": "Don't Decay the Learning Rate, Increase the Batch Size",
+      "url": "https://arxiv.org/abs/1711.00489",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Don't Decay the Learning Rate, Increase the Batch Size",
+      "authors": "Samuel L. Smith et al.",
+      "author_count": 4
+    },
+    {
+      "requested_title": "Spectral Lens",
+      "requested_url": "https://arxiv.org/abs/2605.05683",
+      "title": "Spectral Lens: Activation and Gradient Spectra as Diagnostics of LLM Optimization",
+      "url": "https://arxiv.org/abs/2605.05683",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Spectral Lens: Activation and Gradient Spectra as Diagnostics of LLM Optimization",
+      "authors": "Andy Zeyi Liu, Elliot Paquette, John Sous",
+      "author_count": 3
+    },
+    {
+      "requested_title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+      "requested_url": "https://arxiv.org/abs/1806.07572",
+      "title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+      "url": "https://arxiv.org/abs/1806.07572",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+      "authors": "Arthur Jacot, Franck Gabriel, Clément Hongler",
+      "author_count": 3
+    },
+    {
+      "requested_title": "On Lazy Training in Differentiable Programming",
+      "requested_url": "https://arxiv.org/abs/1812.07956",
+      "title": "On Lazy Training in Differentiable Programming",
+      "url": "https://arxiv.org/abs/1812.07956",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "On Lazy Training in Differentiable Programming",
+      "authors": "Lenaic Chizat, Edouard Oyallon, Francis Bach",
+      "author_count": 3
+    },
+    {
+      "requested_title": "Mean Field Theory of Two-Layers Neural Networks",
+      "requested_url": "https://arxiv.org/abs/1804.06561",
+      "title": "A Mean Field View of the Landscape of Two-Layers Neural Networks",
+      "url": "https://arxiv.org/abs/1804.06561",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "A Mean Field View of the Landscape of Two-Layers Neural Networks",
+      "authors": "Song Mei, Andrea Montanari, Phan-Minh Nguyen",
+      "author_count": 3,
+      "note": "The supplied shorthand title differed. Used the actual title for the supplied identifier: A Mean Field View of the Landscape of Two-Layers Neural Networks (Mei, Montanari, Nguyen)."
+    },
+    {
+      "requested_title": "What Can Transformers Learn In-Context?",
+      "requested_url": "https://arxiv.org/abs/2208.01066",
+      "title": "What Can Transformers Learn In-Context? A Case Study of Simple Function Classes",
+      "url": "https://arxiv.org/abs/2208.01066",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "What Can Transformers Learn In-Context? A Case Study of Simple Function Classes",
+      "authors": "Shivam Garg et al.",
+      "author_count": 4
+    },
+    {
+      "requested_title": "Transformers Learn In-Context by Gradient Descent",
+      "requested_url": "https://arxiv.org/abs/2212.07677",
+      "title": "Transformers learn in-context by gradient descent",
+      "url": "https://arxiv.org/abs/2212.07677",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "Transformers learn in-context by gradient descent",
+      "authors": "Johannes von Oswald et al.",
+      "author_count": 7
+    },
+    {
+      "requested_title": "What Learning Algorithm Is In-Context Learning?",
+      "requested_url": "https://arxiv.org/abs/2211.15661",
+      "title": "What learning algorithm is in-context learning? Investigations with linear models",
+      "url": "https://arxiv.org/abs/2211.15661",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "What learning algorithm is in-context learning? Investigations with linear models",
+      "authors": "Ekin Akyürek et al.",
+      "author_count": 5
+    },
+    {
+      "requested_title": "An Explanation of In-Context Learning as Implicit Bayesian Inference",
+      "requested_url": "https://arxiv.org/abs/2111.02080",
+      "title": "An Explanation of In-context Learning as Implicit Bayesian Inference",
+      "url": "https://arxiv.org/abs/2111.02080",
+      "http_status": "200",
+      "verification": "arXiv citation metadata",
+      "source_title": "An Explanation of In-context Learning as Implicit Bayesian Inference",
+      "authors": "Sang Michael Xie et al.",
+      "author_count": 4
+    },
+    {
+      "title": "Elliot Paquette — High-Dimensional Limits of Stochastic Gradient Descent",
+      "url": "https://elliotpaquette.github.io/notes/high-d-limits-sgd-july2023.pdf",
+      "http_status": "200",
+      "verification": "Author’s notes index and PDF title page",
+      "note": "77-page lecture notes, July 19, 2023. Complements the 127-page Random Matrix Theory of High-Dimensional Optimization notes (July 1, 2024) and the 16-page Courtney and Elliot Paquette survey. These are lecture notes/survey manuscripts, not a claim of a separately published textbook."
+    }
+  ]
+}

@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://manuelpaeza.github.io/ml-notes.html">
 <link rel="preload" href="assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/IBMPlexSans-Light.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261125-hybrid">
+<link rel="stylesheet" href="styles.css?v=20261125-library">
 
 
 </head>
@@ -36,6 +36,7 @@
 <div class="note-category"><h4 id="architectures">Model Architectures and Algorithms</h4></div>
 <div class="note-category"><h4 id="generalization">Generalization and Feature Learning</h4></div>
 <div class="note-category"><h4 id="inference-and-sampling">Statistical Inference and Sampling</h4></div>
+<div class="note-category"><h4 id="ml-systems">ML Systems and Computational Efficiency</h4></div>
 <div class="note-category"><h4 id="reinforcement-learning">Post-Training and Reinforcement Learning</h4></div>
 </section><section aria-labelledby="research"><h3 id="research">III. Research Investigations</h3>
 <p>A section dedicated to ongoing independent theoretical and empirical research projects in modern machine learning.</p>
@@ -47,29 +48,181 @@
 <li>Statistical and Algorithmic Generalization in Transformers</li>
 <li>Sampling Efficiency in Generative and Reasoning Models</li>
 </ul></section><section aria-labelledby="resources"><h3 id="resources">IV. Selected Resources</h3>
-<p>A curated collection of external courses, mathematical lecture notes, monographs, technical reports, and industry research resources.</p>
-<div class="resource-group"><h4>Language Model Pretraining and Architecture</h4><ul class="notebook-list">
-<li><a href="https://cs312.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford CS 312 — Deep Learning Alchemy</a></li>
+<p>An evolving collection of courses, lecture notes, monographs, research papers, technical reports, and implementations on the mathematical, algorithmic, and empirical foundations of modern deep learning.</p>
+<details class="resource-group"><summary><h4>Language Model Pretraining and Architecture <span class="metadata">(7 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://deep-learning-alchemy.github.io/" target="_blank" rel="noopener noreferrer">Stanford CS 312 — Deep Learning Alchemy</a></li>
 <li><a href="https://cs336.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford CS 336 — Language Modeling from Scratch</a></li>
 <li><a href="https://web.stanford.edu/class/msande319/" target="_blank" rel="noopener noreferrer">Stanford MS&amp;E 319 — Efficient Generative Language Models</a></li>
-</ul></div>
-<div class="resource-group"><h4>Mathematical Foundations of Deep Learning</h4><ul class="notebook-list">
+<li><a href="https://edoliberty.com/algorithms-in-large-language-models/" target="_blank" rel="noopener noreferrer">Alexandr Andoni and Edo Liberty — Algorithms in Large Language Models</a></li>
+<li><a href="https://kaifeng.ac/llms-from-scratch/2025/" target="_blank" rel="noopener noreferrer">Kaifeng Lyu — Large Language Models from Scratch: Theory and Practice</a></li>
+<li><a href="https://djhsu.notion.site/COMS-6998-7-Spring-2025-Theoretical-Foundations-of-Large-Language-Models-127a251f6d5d80f6b037dcca22bf4b85" target="_blank" rel="noopener noreferrer">Daniel Hsu — Theoretical Foundations of Large Language Models</a></li>
+<li><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener noreferrer">Stanford CS 224N — Natural Language Processing with Deep Learning</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Optimization and High-Dimensional Training Dynamics <span class="metadata">(12 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://elliotpaquette.github.io/summer-school-2026-notes/" target="_blank" rel="noopener noreferrer">Elliot Paquette — Power Laws in Data and Optimization</a></li>
+<li><a href="https://elliotpaquette.github.io/notes/RMTandOptimization-20240701.pdf" target="_blank" rel="noopener noreferrer">Elliot Paquette — Random Matrix Theory of High-Dimensional Optimization</a></li>
+<li><a href="https://elliotpaquette.github.io/notes/high-d-limits-sgd-july2023.pdf" target="_blank" rel="noopener noreferrer">Elliot Paquette — High-Dimensional Limits of Stochastic Gradient Descent</a></li>
+<li><a href="https://cypaquette.github.io/Research/High_dimensional_optimization_survey.pdf" target="_blank" rel="noopener noreferrer">Courtney and Elliot Paquette — High-Dimensional Optimization</a></li>
+<li><a href="https://elliotpaquette.github.io/" target="_blank" rel="noopener noreferrer">Elliot Paquette — Research and Lecture Notes</a></li>
+<li><a href="https://cypaquette.github.io/" target="_blank" rel="noopener noreferrer">Courtney Paquette — Research and Lecture Notes</a></li>
+<li><a href="https://arxiv.org/abs/1606.04838" target="_blank" rel="noopener noreferrer">Optimization Methods for Large-Scale Machine Learning</a> <span class="metadata">— Léon Bottou, Frank E. Curtis, Jorge Nocedal</span></li>
+<li><a href="https://arxiv.org/abs/1405.4980" target="_blank" rel="noopener noreferrer">Convex Optimization: Algorithms and Complexity</a> <span class="metadata">— Sébastien Bubeck</span></li>
+<li><a href="https://web.stanford.edu/class/ee364b/lectures.html" target="_blank" rel="noopener noreferrer">Stanford EE364B — Advanced Optimization</a></li>
+<li><a href="https://damek.github.io/STAT-4830/" target="_blank" rel="noopener noreferrer">Damek Davis — Numerical Optimization for Data Science and Machine Learning</a></li>
+<li><a href="https://optmlclass.github.io/" target="_blank" rel="noopener noreferrer">EC525 — Optimization for Machine Learning</a></li>
+<li><a href="https://www.swojtowytsch.com/teaching/689-deep-learning/optimization-for-deep-learning" target="_blank" rel="noopener noreferrer">Stephan Wojtowytsch — Optimization for Deep Learning</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Mathematical Foundations of Deep Learning <span class="metadata">(12 resources)</span></h4></summary>
+<ul class="notebook-list">
 <li><a href="https://misiakie.github.io/SDS659.html" target="_blank" rel="noopener noreferrer">Theodor Misiakiewicz — Mathematics of Deep Learning</a></li>
+<li><a href="https://princetonuniversity.github.io/princeton-cos514-fall25.github.io/" target="_blank" rel="noopener noreferrer">Sanjeev Arora — Princeton COS 514: Fundamentals of Deep Learning</a></li>
 <li><a href="https://mjt.cs.illinois.edu/dlt/" target="_blank" rel="noopener noreferrer">Matus Telgarsky — Deep Learning Theory</a></li>
-<li><a href="https://deeplearningtheory.com/" target="_blank" rel="noopener noreferrer">The Principles of Deep Learning Theory</a></li>
+<li><a href="https://leiwu0.github.io/courses/dl-theory/index.html" target="_blank" rel="noopener noreferrer">Lei Wu — Topics in Deep Learning Theory</a></li>
+<li><a href="https://math.berkeley.edu/~fengt/2025F_270.html" target="_blank" rel="noopener noreferrer">Tony Feng — Berkeley Math 270: A Survey of Deep Learning for Mathematicians</a></li>
+<li><a href="https://deeplearningtheory.com/" target="_blank" rel="noopener noreferrer">Roberts, Yaida, and Hanin — The Principles of Deep Learning Theory</a></li>
+<li><a href="https://www.di.ens.fr/~fbach/ltfp_book.pdf" target="_blank" rel="noopener noreferrer">Francis Bach — Learning Theory from First Principles</a></li>
 <li><a href="https://francisbach.com/" target="_blank" rel="noopener noreferrer">Francis Bach — Machine Learning Research Blog</a></li>
-</ul></div>
-<div class="resource-group"><h4>High-Dimensional Statistics and Statistical Mechanics</h4><ul class="notebook-list">
-<li><a href="https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html" target="_blank" rel="noopener noreferrer">Song Mei — Mean Field Asymptotics in Statistical Learning</a></li>
-<li><a href="https://idephics.github.io/EPFLDoctoralLecture2023/" target="_blank" rel="noopener noreferrer">Statistical Physics for Optimization and Learning</a></li>
-</ul></div>
-<div class="resource-group"><h4>Industry Pretraining and Training Systems</h4><ul class="notebook-list">
-<li><a href="https://marin.community/" target="_blank" rel="noopener noreferrer">Marin — Open Pretraining Research</a></li>
-<li><a href="https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook" target="_blank" rel="noopener noreferrer">The Smol Training Playbook</a></li>
-<li><a href="https://jax-ml.github.io/scaling-book/" target="_blank" rel="noopener noreferrer">How to Scale Your Model</a></li>
-<li><a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook" target="_blank" rel="noopener noreferrer">The Ultra-Scale Playbook</a></li>
+<li><a href="https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/resources/lecture-notes/" target="_blank" rel="noopener noreferrer">MIT 6.7960 — Deep Learning</a></li>
+<li><a href="https://mlschool.princeton.edu/previous" target="_blank" rel="noopener noreferrer">Princeton Machine Learning Theory Summer Schools</a></li>
+<li><a href="https://cims.nyu.edu/~bruna/teaching/" target="_blank" rel="noopener noreferrer">Joan Bruna — Mathematics of Deep Learning and Teaching Resources</a></li>
+<li><a href="https://mitliagkas.github.io/ift6169-2027/" target="_blank" rel="noopener noreferrer">Ioannis Mitliagkas — Theoretical Principles for Deep Learning (Winter 2027)</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>PyTorch and Implementation <span class="metadata">(8 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://docs.pytorch.org/tutorials/" target="_blank" rel="noopener noreferrer">Official PyTorch Tutorials</a></li>
+<li><a href="https://github.com/karpathy/nn-zero-to-hero" target="_blank" rel="noopener noreferrer">Andrej Karpathy — Neural Networks: Zero to Hero</a></li>
+<li><a href="https://github.com/rasbt/LLMs-from-scratch" target="_blank" rel="noopener noreferrer">Sebastian Raschka — Build a Large Language Model from Scratch</a></li>
+<li><a href="https://d2l.ai/" target="_blank" rel="noopener noreferrer">Dive into Deep Learning</a></li>
+<li><a href="https://www.deep-ml.com/" target="_blank" rel="noopener noreferrer">Deep-ML — Machine Learning Coding Exercises</a></li>
+<li><a href="https://docs.pytorch.org/tutorials/recipes/recipes/tuning_guide" target="_blank" rel="noopener noreferrer">PyTorch Performance Tuning Guide</a></li>
+<li><a href="https://triton-lang.org/main/getting-started/tutorials/index.html" target="_blank" rel="noopener noreferrer">Triton Tutorials</a></li>
+<li><a href="https://github.com/gpu-mode/lectures" target="_blank" rel="noopener noreferrer">GPU MODE — GPU Programming and Performance Lectures</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Empirical Training and Experimental Methodology <span class="metadata">(7 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://github.com/google-research/tuning_playbook" target="_blank" rel="noopener noreferrer">Google Research — Deep Learning Tuning Playbook</a></li>
+<li><a href="https://mlcommons.org/benchmarks/algorithms/" target="_blank" rel="noopener noreferrer">MLCommons — AlgoPerf</a></li>
+<li><a href="https://kellerjordan.github.io/posts/muon/" target="_blank" rel="noopener noreferrer">Keller Jordan — Muon</a></li>
+<li><a href="https://jeremybernste.in/" target="_blank" rel="noopener noreferrer">Jeremy Bernstein — Research Notes</a></li>
+<li><a href="https://arxiv.org/abs/2410.21265" target="_blank" rel="noopener noreferrer">Modular Duality in Deep Learning</a> <span class="metadata">— Jeremy Bernstein, Laker Newhouse</span></li>
+<li><a href="https://github.com/EleutherAI/cookbook" target="_blank" rel="noopener noreferrer">EleutherAI — Model Training Cookbook</a></li>
 <li><a href="https://github.com/KellerJordan/modded-nanogpt" target="_blank" rel="noopener noreferrer">NanoGPT Speedrun</a></li>
-</ul></div>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>High-Dimensional Statistics and Statistical Mechanics <span class="metadata">(7 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html" target="_blank" rel="noopener noreferrer">Song Mei — Mean Field Asymptotics in Statistical Learning</a></li>
+<li><a href="https://idephics.github.io/EPFLDoctoralLecture2023/" target="_blank" rel="noopener noreferrer">EPFL — Statistical Physics for Optimization and Learning (2023)</a></li>
+<li><a href="https://sphinxteam.github.io/EPFLDoctoralLecture2021/" target="_blank" rel="noopener noreferrer">EPFL — Statistical Physics for Optimization and Learning (2021)</a></li>
+<li><a href="https://elliotpaquette.github.io/high-dimensional-probability/course/index.html" target="_blank" rel="noopener noreferrer">Elliot Paquette — High-Dimensional Probability</a></li>
+<li><a href="https://webapps.math.uci.edu/~rvershyn/teaching/hdp/hdp.html" target="_blank" rel="noopener noreferrer">Roman Vershynin — High-Dimensional Probability</a></li>
+<li><a href="https://www.di.ens.fr/~fbach/learning_theory_class_2025/index.html" target="_blank" rel="noopener noreferrer">Francis Bach — Learning Theory Course</a></li>
+<li><a href="https://probml.github.io/pml-book/" target="_blank" rel="noopener noreferrer">Kevin Murphy — Probabilistic Machine Learning</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Neural Architectures and Algorithmic Theory <span class="metadata">(6 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/2312.10794" target="_blank" rel="noopener noreferrer">A mathematical perspective on Transformers</a> <span class="metadata">— Borjan Geshkovski et al.</span></li>
+<li><a href="https://arxiv.org/abs/2207.09238" target="_blank" rel="noopener noreferrer">Formal Algorithms for Transformers</a> <span class="metadata">— Mary Phuong, Marcus Hutter</span></li>
+<li><a href="https://nlp.seas.harvard.edu/annotated-transformer/" target="_blank" rel="noopener noreferrer">The Annotated Transformer</a></li>
+<li><a href="https://srush.github.io/annotated-s4/" target="_blank" rel="noopener noreferrer">The Annotated S4</a></li>
+<li><a href="https://sebastianraschka.com/llm-architecture-gallery/" target="_blank" rel="noopener noreferrer">Sebastian Raschka — LLM Architecture Gallery</a></li>
+<li><a href="https://web.stanford.edu/class/cs25/" target="_blank" rel="noopener noreferrer">Stanford CS 25 — Transformers United</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Industry Pretraining and Training Systems <span class="metadata">(11 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://marin.community/" target="_blank" rel="noopener noreferrer">Marin — Open Pretraining Research and Training Reports</a></li>
+<li><a href="https://marin.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">Marin Documentation</a></li>
+<li><a href="https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook" target="_blank" rel="noopener noreferrer">Hugging Face — The Smol Training Playbook</a></li>
+<li><a href="https://jax-ml.github.io/scaling-book/" target="_blank" rel="noopener noreferrer">Google DeepMind — How to Scale Your Model</a></li>
+<li><a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook" target="_blank" rel="noopener noreferrer">Hugging Face — The Ultra-Scale Playbook</a></li>
+<li><a href="https://github.com/allenai/OLMo-core" target="_blank" rel="noopener noreferrer">Allen Institute for AI — OLMo Core</a></li>
+<li><a href="https://docs.allenai.org/in_depth/training" target="_blank" rel="noopener noreferrer">Allen Institute for AI — Model Training Documentation</a></li>
+<li><a href="https://github.com/karpathy/nanochat" target="_blank" rel="noopener noreferrer">Andrej Karpathy — nanochat</a></li>
+<li><a href="https://github.com/NVIDIA/Megatron-LM" target="_blank" rel="noopener noreferrer">NVIDIA — Megatron-LM</a></li>
+<li><a href="https://github.com/deepspeedai/DeepSpeed" target="_blank" rel="noopener noreferrer">DeepSpeed — Distributed Training and Inference</a></li>
+<li><a href="https://github.com/huggingface/nanotron" target="_blank" rel="noopener noreferrer">Hugging Face — Nanotron</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Model Technical Reports <span class="metadata">(9 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/2407.21783" target="_blank" rel="noopener noreferrer">The Llama 3 Herd of Models</a> <span class="metadata">— Aaron Grattafiori et al.</span></li>
+<li><a href="https://arxiv.org/abs/2405.04434" target="_blank" rel="noopener noreferrer">DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model</a> <span class="metadata">— DeepSeek-AI et al.</span></li>
+<li><a href="https://arxiv.org/abs/2412.19437" target="_blank" rel="noopener noreferrer">DeepSeek-V3 Technical Report</a> <span class="metadata">— DeepSeek-AI et al.</span></li>
+<li><a href="https://arxiv.org/abs/2501.00656" target="_blank" rel="noopener noreferrer">2 OLMo 2 Furious</a> <span class="metadata">— Team OLMo et al.</span></li>
+<li><a href="https://allenai.org/olmo" target="_blank" rel="noopener noreferrer">OLMo — Open Language Model Research</a></li>
+<li><a href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener noreferrer">Qwen3 Technical Report</a> <span class="metadata">— An Yang et al.</span></li>
+<li><a href="https://arxiv.org/abs/2507.20534" target="_blank" rel="noopener noreferrer">Kimi K2: Open Agentic Intelligence</a> <span class="metadata">— Kimi Team et al.</span></li>
+<li><a href="https://huggingface.co/blog/smollm3" target="_blank" rel="noopener noreferrer">SmolLM3</a></li>
+<li><a href="https://arxiv.org/abs/2205.01068" target="_blank" rel="noopener noreferrer">OPT: Open Pre-trained Transformer Language Models</a> <span class="metadata">— Susan Zhang et al.</span></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Post-Training, Reinforcement Learning, and Generative Modeling <span class="metadata">(8 resources)</span></h4></summary>
+<ul class="notebook-list">
+<li><a href="https://rlhfbook.com/" target="_blank" rel="noopener noreferrer">Nathan Lambert — Reinforcement Learning from Human Feedback</a></li>
+<li><a href="https://rlhfbook.com/course" target="_blank" rel="noopener noreferrer">Nathan Lambert — Post-Training Course</a></li>
+<li><a href="http://incompleteideas.net/book/the-book-2nd.html" target="_blank" rel="noopener noreferrer">Sutton and Barto — Reinforcement Learning: An Introduction</a></li>
+<li><a href="https://rail.eecs.berkeley.edu/deeprlcourse/" target="_blank" rel="noopener noreferrer">Berkeley CS 285 — Deep Reinforcement Learning</a></li>
+<li><a href="https://web.stanford.edu/class/cs234/" target="_blank" rel="noopener noreferrer">Stanford CS 234 — Reinforcement Learning</a></li>
+<li><a href="https://github.com/huggingface/open-r1" target="_blank" rel="noopener noreferrer">Hugging Face — Open R1</a></li>
+<li><a href="https://diffusion.csail.mit.edu/2026/index.html" target="_blank" rel="noopener noreferrer">MIT — Introduction to Flow Matching and Diffusion Models</a></li>
+<li><a href="https://github.com/huggingface/trl" target="_blank" rel="noopener noreferrer">Hugging Face — TRL</a></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h4>Foundational and Research Papers <span class="metadata">(29 resources)</span></h4></summary>
+<details class="resource-group"><summary><h5>Pretraining, Scaling, and Parameterization <span class="metadata">(5 resources)</span></h5></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">Attention Is All You Need</a> <span class="metadata">— Ashish Vaswani et al.</span></li>
+<li><a href="https://arxiv.org/abs/2001.08361" target="_blank" rel="noopener noreferrer">Scaling Laws for Neural Language Models</a> <span class="metadata">— Jared Kaplan et al.</span></li>
+<li><a href="https://arxiv.org/abs/2203.15556" target="_blank" rel="noopener noreferrer">Training Compute-Optimal Large Language Models</a> <span class="metadata">— Jordan Hoffmann et al.</span></li>
+<li><a href="https://arxiv.org/abs/2203.03466" target="_blank" rel="noopener noreferrer">Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer</a> <span class="metadata">— Greg Yang et al.</span></li>
+<li><a href="https://arxiv.org/abs/2205.14135" target="_blank" rel="noopener noreferrer">FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness</a> <span class="metadata">— Tri Dao et al.</span></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h5>Optimization Algorithms <span class="metadata">(9 resources)</span></h5></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/1412.6980" target="_blank" rel="noopener noreferrer">Adam: A Method for Stochastic Optimization</a> <span class="metadata">— Diederik P. Kingma, Jimmy Ba</span></li>
+<li><a href="https://arxiv.org/abs/1711.05101" target="_blank" rel="noopener noreferrer">Decoupled Weight Decay Regularization</a> <span class="metadata">— Ilya Loshchilov, Frank Hutter</span></li>
+<li><a href="https://arxiv.org/abs/1802.09568" target="_blank" rel="noopener noreferrer">Shampoo: Preconditioned Stochastic Tensor Optimization</a> <span class="metadata">— Vineet Gupta, Tomer Koren, Yoram Singer</span></li>
+<li><a href="https://arxiv.org/abs/2409.11321" target="_blank" rel="noopener noreferrer">SOAP: Improving and Stabilizing Shampoo using Adam</a> <span class="metadata">— Nikhil Vyas et al.</span></li>
+<li><a href="https://arxiv.org/abs/2305.14342" target="_blank" rel="noopener noreferrer">Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training</a> <span class="metadata">— Hong Liu et al.</span></li>
+<li><a href="https://arxiv.org/abs/2302.06675" target="_blank" rel="noopener noreferrer">Symbolic Discovery of Optimization Algorithms</a> <span class="metadata">— Xiangning Chen et al.</span></li>
+<li><a href="https://arxiv.org/abs/1804.04235" target="_blank" rel="noopener noreferrer">Adafactor: Adaptive Learning Rates with Sublinear Memory Cost</a> <span class="metadata">— Noam Shazeer, Mitchell Stern</span></li>
+<li><a href="https://arxiv.org/abs/2403.03507" target="_blank" rel="noopener noreferrer">GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection</a> <span class="metadata">— Jiawei Zhao et al.</span></li>
+<li><a href="https://arxiv.org/abs/2502.16982" target="_blank" rel="noopener noreferrer">Muon is Scalable for LLM Training</a> <span class="metadata">— Jingyuan Liu et al.</span></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h5>Optimization and Learning Dynamics <span class="metadata">(8 resources)</span></h5></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/2103.00065" target="_blank" rel="noopener noreferrer">Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability</a> <span class="metadata">— Jeremy M. Cohen et al.</span></li>
+<li><a href="https://arxiv.org/abs/2207.14484" target="_blank" rel="noopener noreferrer">Adaptive Gradient Methods at the Edge of Stability</a> <span class="metadata">— Jeremy M. Cohen et al.</span></li>
+<li><a href="https://arxiv.org/abs/2410.05192" target="_blank" rel="noopener noreferrer">Understanding Warmup-Stable-Decay Learning Rates: A River Valley Loss Landscape Perspective</a> <span class="metadata">— Kaiyue Wen et al.</span></li>
+<li><a href="https://arxiv.org/abs/1312.6120" target="_blank" rel="noopener noreferrer">Exact solutions to the nonlinear dynamics of learning in deep linear neural networks</a> <span class="metadata">— Andrew M. Saxe, James L. McClelland, Surya Ganguli</span></li>
+<li><a href="https://arxiv.org/abs/1907.04164" target="_blank" rel="noopener noreferrer">Which Algorithmic Choices Matter at Which Batch Sizes? Insights From a Noisy Quadratic Model</a> <span class="metadata">— Guodong Zhang et al.</span></li>
+<li><a href="https://arxiv.org/abs/1812.06162" target="_blank" rel="noopener noreferrer">An Empirical Model of Large-Batch Training</a> <span class="metadata">— Sam McCandlish et al.</span></li>
+<li><a href="https://arxiv.org/abs/1711.00489" target="_blank" rel="noopener noreferrer">Don&#x27;t Decay the Learning Rate, Increase the Batch Size</a> <span class="metadata">— Samuel L. Smith et al.</span></li>
+<li><a href="https://arxiv.org/abs/2605.05683" target="_blank" rel="noopener noreferrer">Spectral Lens: Activation and Gradient Spectra as Diagnostics of LLM Optimization</a> <span class="metadata">— Andy Zeyi Liu, Elliot Paquette, John Sous</span></li>
+</ul>
+</details>
+<details class="resource-group"><summary><h5>Generalization, Feature Learning, and Statistical Inference <span class="metadata">(7 resources)</span></h5></summary>
+<ul class="notebook-list">
+<li><a href="https://arxiv.org/abs/1806.07572" target="_blank" rel="noopener noreferrer">Neural Tangent Kernel: Convergence and Generalization in Neural Networks</a> <span class="metadata">— Arthur Jacot, Franck Gabriel, Clément Hongler</span></li>
+<li><a href="https://arxiv.org/abs/1812.07956" target="_blank" rel="noopener noreferrer">On Lazy Training in Differentiable Programming</a> <span class="metadata">— Lenaic Chizat, Edouard Oyallon, Francis Bach</span></li>
+<li><a href="https://arxiv.org/abs/1804.06561" target="_blank" rel="noopener noreferrer">A Mean Field View of the Landscape of Two-Layers Neural Networks</a> <span class="metadata">— Song Mei, Andrea Montanari, Phan-Minh Nguyen</span></li>
+<li><a href="https://arxiv.org/abs/2208.01066" target="_blank" rel="noopener noreferrer">What Can Transformers Learn In-Context? A Case Study of Simple Function Classes</a> <span class="metadata">— Shivam Garg et al.</span></li>
+<li><a href="https://arxiv.org/abs/2212.07677" target="_blank" rel="noopener noreferrer">Transformers learn in-context by gradient descent</a> <span class="metadata">— Johannes von Oswald et al.</span></li>
+<li><a href="https://arxiv.org/abs/2211.15661" target="_blank" rel="noopener noreferrer">What learning algorithm is in-context learning? Investigations with linear models</a> <span class="metadata">— Ekin Akyürek et al.</span></li>
+<li><a href="https://arxiv.org/abs/2111.02080" target="_blank" rel="noopener noreferrer">An Explanation of In-context Learning as Implicit Bayesian Inference</a> <span class="metadata">— Sang Michael Xie et al.</span></li>
+</ul>
+</details>
+</details>
 </section></div>
 </main>
 </div>

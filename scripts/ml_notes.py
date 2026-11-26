@@ -10,31 +10,8 @@ CATEGORIES = {
     'architectures': 'Model Architectures and Algorithms',
     'generalization': 'Generalization and Feature Learning',
     'inference-and-sampling': 'Statistical Inference and Sampling',
+    'ml-systems': 'ML Systems and Computational Efficiency',
     'reinforcement-learning': 'Post-Training and Reinforcement Learning',
-}
-RESOURCES = {
-    'Language Model Pretraining and Architecture': [
-        ('Stanford CS 312 — Deep Learning Alchemy', 'https://cs312.stanford.edu/'),
-        ('Stanford CS 336 — Language Modeling from Scratch', 'https://cs336.stanford.edu/'),
-        ('Stanford MS&E 319 — Efficient Generative Language Models', 'https://web.stanford.edu/class/msande319/'),
-    ],
-    'Mathematical Foundations of Deep Learning': [
-        ('Theodor Misiakiewicz — Mathematics of Deep Learning', 'https://misiakie.github.io/SDS659.html'),
-        ('Matus Telgarsky — Deep Learning Theory', 'https://mjt.cs.illinois.edu/dlt/'),
-        ('The Principles of Deep Learning Theory', 'https://deeplearningtheory.com/'),
-        ('Francis Bach — Machine Learning Research Blog', 'https://francisbach.com/'),
-    ],
-    'High-Dimensional Statistics and Statistical Mechanics': [
-        ('Song Mei — Mean Field Asymptotics in Statistical Learning', 'https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html'),
-        ('Statistical Physics for Optimization and Learning', 'https://idephics.github.io/EPFLDoctoralLecture2023/'),
-    ],
-    'Industry Pretraining and Training Systems': [
-        ('Marin — Open Pretraining Research', 'https://marin.community/'),
-        ('The Smol Training Playbook', 'https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook'),
-        ('How to Scale Your Model', 'https://jax-ml.github.io/scaling-book/'),
-        ('The Ultra-Scale Playbook', 'https://huggingface.co/spaces/nanotron/ultrascale-playbook'),
-        ('NanoGPT Speedrun', 'https://github.com/KellerJordan/modded-nanogpt'),
-    ],
 }
 DIRECTIONS = [
     'Multimode Optimization Across Neural Network Architectures',
@@ -90,7 +67,50 @@ def listing(entries, category, link):
                      f'<p class="entry-links">{entry_links(e, link)}</p></li>')
     return '<ul class="bibliography">' + '\n'.join(items) + '</ul>'
 
-def landing(entries, link):
+def load_resources(root):
+    groups = json.loads((root / 'ml-notes/resources.json').read_text())
+    urls = set()
+    def validate(group):
+        assert group['title'].strip()
+        assert ('resources' in group) != ('sections' in group)
+        if 'sections' in group:
+            assert group['sections']
+            for section in group['sections']:
+                validate(section)
+        else:
+            assert group['resources']
+            for resource in group['resources']:
+                assert resource['title'].strip()
+                url = resource['url']
+                assert url.startswith(('https://', 'http://'))
+                assert url not in urls, f'Duplicate resource URL: {url}'
+                urls.add(url)
+    for group in groups:
+        validate(group)
+    return groups
+
+def resource_count(group):
+    if 'resources' in group:
+        return len(group['resources'])
+    return sum(resource_count(section) for section in group['sections'])
+
+def resource_group(group, link, level=4):
+    count = resource_count(group)
+    parts = [f'<details class="resource-group"><summary><h{level}>{escape(group["title"])} '
+             f'<span class="metadata">({count} {"resource" if count == 1 else "resources"})</span></h{level}></summary>']
+    if 'sections' in group:
+        parts.extend(resource_group(section, link, level + 1) for section in group['sections'])
+    else:
+        parts.append('<ul class="notebook-list">')
+        for resource in group['resources']:
+            attribution = (f' <span class="metadata">— {escape(resource["attribution"])}</span>'
+                           if resource.get('attribution') else '')
+            parts.append(f'<li>{link(resource["title"], resource["url"])}{attribution}</li>')
+        parts.append('</ul>')
+    parts.append('</details>')
+    return '\n'.join(parts)
+
+def landing(entries, resources, link):
     parts = ['''<div class="ml-notebook">
 <header class="notebook-intro"><h2>ML Research Notes</h2>
 <p>This page contains a collection of mathematical notes, training reports, and research investigations into the foundations of modern deep learning, with an emphasis on language model pretraining, optimization and learning dynamics, model architectures, and generalization.</p>
@@ -110,11 +130,8 @@ def landing(entries, link):
     parts.append('<p>Prospective research directions include the following. These are potential future investigations, not completed research or published results.</p><ul class="notebook-list">')
     parts.extend(f'<li>{escape(title)}</li>' for title in DIRECTIONS)
     parts.append('''</ul></section><section aria-labelledby="resources"><h3 id="resources">IV. Selected Resources</h3>
-<p>A curated collection of external courses, mathematical lecture notes, monographs, technical reports, and industry research resources.</p>''')
-    for title, resources in RESOURCES.items():
-        parts.append(f'<div class="resource-group"><h4>{escape(title)}</h4><ul class="notebook-list">')
-        parts.extend(f'<li>{link(title, url)}</li>' for title, url in resources)
-        parts.append('</ul></div>')
+<p>An evolving collection of courses, lecture notes, monographs, research papers, technical reports, and implementations on the mathematical, algorithmic, and empirical foundations of modern deep learning.</p>''')
+    parts.extend(resource_group(group, link) for group in resources)
     parts.append('</section></div>')
     return '\n'.join(parts)
 
@@ -134,7 +151,7 @@ ARTICLE_SCRIPTS = '''<script src="../../ml-notes/article.js?v=20261124" defer></
 def build(root, page, link, preview=False):
     entries = load_entries(root)
     page('ml-notes.html', 'ML Research Notes — Manuel Paez',
-         'Mathematical notes, training reports, and research investigations into modern deep learning.', landing(entries, link))
+         'Mathematical notes, training reports, and research investigations into modern deep learning.', landing(entries, load_resources(root), link))
     for e in entries:
         page(article_path(e), e['title'] + ' — Manuel Paez', e['description'],
              article(e, (root / source_path(e)).read_text(), link), extra_head=ARTICLE_SCRIPTS)

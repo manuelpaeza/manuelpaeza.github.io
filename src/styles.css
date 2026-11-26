@@ -191,7 +191,22 @@ strong { font-weight: 600; }
   margin: 0 0 6px;
 }
 .note-category { margin: 10px 0; }
-.resource-group + .resource-group { margin-top: 22px; }
+.ml-notebook .resource-group { margin: 10px 0; }
+.ml-notebook .resource-group summary { cursor: pointer; }
+.ml-notebook .resource-group summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+.ml-notebook .resource-group summary h4,
+.ml-notebook .resource-group summary h5 {
+  display: inline;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.ml-notebook .resource-group summary .metadata { font-weight: 400; }
+.ml-notebook .resource-group .resource-group { margin-left: 18px; }
 .notebook-list, .references {
   list-style: disc;
   padding-left: 22px;

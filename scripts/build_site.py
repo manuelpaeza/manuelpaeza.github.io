@@ -6,7 +6,7 @@ import ml_notes
 ROOT = Path(__file__).resolve().parents[1]
 
 def link(text, url):
-    extra = ' target="_blank" rel="noopener noreferrer"' if url.startswith('https:') or url.endswith('.pdf') else ''
+    extra = ' target="_blank" rel="noopener noreferrer"' if url.startswith(('https:', 'http:')) or url.endswith('.pdf') else ''
     return f'<a href="{escape(url, quote=True)}"{extra}>{escape(text)}</a>'
 
 papers = [
@@ -52,6 +52,7 @@ def page(filename, title, description, body, home=False, redirect=None, extra_he
     prefix = "../" * (len(Path(filename).parts) - 1)
     active = "ml-notes.html" if filename.startswith("ml-notes/") else filename
     nav = ' '.join(f'<a href="{prefix}{url}"'+(' aria-current="page"' if active==url else '')+f'>{name}</a>' for name,url in [('Home','index.html'),('Publications','publications.html'),('Projects','projects.html'),('ML Research Notes','ml-notes.html'),('Code','code.html'),('CV','manuelpaez_curriculum_vitae.pdf')])
+    css_version = "20261125-library" if filename == "ml-notes.html" else "20261125-hybrid"
     canonical = 'https://manuelpaeza.github.io/'+filename
     refresh = f'<meta http-equiv="refresh" content="0; url={redirect}">' if redirect else ''
     result=f'''<!doctype html>
@@ -68,7 +69,7 @@ def page(filename, title, description, body, home=False, redirect=None, extra_he
 <meta property="og:url" content="{canonical}">
 <link rel="preload" href="{prefix}assets/fonts/IBMPlexSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{prefix}assets/fonts/IBMPlexSans-Light.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{prefix}styles.css?v=20261125-hybrid">
+<link rel="stylesheet" href="{prefix}styles.css?v={css_version}">
 {refresh}
 {extra_head}
 </head>

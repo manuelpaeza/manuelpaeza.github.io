@@ -80,9 +80,26 @@ print('PASS local IBM Plex fonts, fallbacks, and no external font imports')
 
 import ml_notes
 ml_html = (ROOT/'ml-notes.html').read_text()
-for title, resources in ml_notes.RESOURCES.items():
-    for label, url in resources:
-        assert build_site.link(label, url) in ml_html
+resource_groups = ml_notes.load_resources(ROOT)
+class Disclosures(HTMLParser):
+    def __init__(self):
+        super().__init__(); self.details = 0; self.summaries = 0; self.hrefs = []
+    def handle_starttag(self, tag, attrs):
+        if tag == 'details':
+            self.details += 1
+            assert not {'open', 'name'} & dict(attrs).keys(), 'Disclosures must start closed and remain independent'
+        if tag == 'summary': self.summaries += 1
+        if tag == 'a': self.hrefs.append(dict(attrs).get('href'))
+        assert tag != 'script', 'Resource library must work without JavaScript'
+disclosures = Disclosures()
+disclosures.feed(ml_html)
+expected = len(resource_groups) + sum(len(g.get('sections', [])) for g in resource_groups)
+assert disclosures.details == disclosures.summaries == expected
+for group in resource_groups:
+    for section in group.get('sections', [group]):
+        for resource in section['resources']:
+            assert disclosures.hrefs.count(resource['url']) == 1, resource['url']
+            assert escape(resource['title']) in ml_html
 for category in ml_notes.CATEGORIES:
     assert f'id="{category}"' in ml_html
 assert 'not completed research or published results' in ml_html

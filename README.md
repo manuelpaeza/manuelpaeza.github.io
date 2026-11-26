@@ -48,7 +48,7 @@ Without these scripts, prose and code remain readable and math remains LaTeX.
 
 1. Choose a stable lowercase hyphenated slug and category. Reports use
    `training-reports`; notes use `pretraining`, `optimization`, `architectures`,
-   `generalization`, `inference-and-sampling`, or `reinforcement-learning`.
+   `generalization`, `inference-and-sampling`, `ml-systems`, or `reinforcement-learning`.
    Independent investigations use `research`.
 2. Copy `ml-notes/_templates/article.html` to
    `ml-notes/_articles/<category>/<slug>.html` (create the category directory).
@@ -105,3 +105,26 @@ figure/caption, and table. Check desktop and 320–375px mobile widths; wide cod
 math, and tables should scroll inside their containers, not widen the page.
 `npm run check` verifies shared navigation order, local assets/links, HTML structure,
 metadata, categories, resource inclusion, and registered article outputs.
+
+### Maintain the resource library
+
+Edit `ml-notes/resources.json`, not the generated HTML. Each group has a `title`
+and a `resources` array of objects with `title`, `url`, and optional `attribution`.
+The Foundational and Research Papers group instead has a `sections` array of
+subgroups in the same format. Keep URLs unique; counts are calculated during the
+build. Native `details`/`summary` disclosures start closed, open independently,
+and work by keyboard without JavaScript. Styling is scoped to `.ml-notebook`.
+
+Verify new URLs against original author/institution pages; for arXiv papers,
+check both title and authors. The initial verification record, including title
+corrections, redirects, duplicate consolidation, and access limitations, is in
+`ml-notes/_verification/resources.json`. This underscore-prefixed directory is
+excluded by the existing GitHub Pages/Jekyll processing. Verification is a dated
+snapshot, not a guarantee that external sites will remain available. The Notion
+course was corroborated by Columbia's catalog; four sites blocked direct curl
+but were readable through the web reader. Sutton and Barto's working author
+page uses HTTP because its HTTPS endpoint could not be reached.
+
+Run `npm run build` and `npm run check` after editing. Check the closed library,
+multiple expanded groups, nested paper groups, keyboard focus, and narrow screens.
+The rest of the notebook and article templates should remain unchanged.
